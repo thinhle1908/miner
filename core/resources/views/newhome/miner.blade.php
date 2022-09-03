@@ -36,9 +36,9 @@
                                     <div class="pricing-header1">
                                         <h5>{{ $package->title }}</h5>
                                         <p>{{ $package->speed }}</p>
-                                        <p class="text-center" style="text-transform: uppercase;font-size: 12px;color: #fff;">Get {{ $package->return }} {{ $package->category->code }} Per Day For {{ $package->period . ' ' . $package->ptyp }}</p>
+                                        <p class="text-center" style="text-transform: uppercase;font-size: 12px;color: #fff;">Nhận {{ $package->return }} {{ $package->category->code }} Mỗi Ngày Trong {{ $package->period . ' ' . $package->ptyp }}</p>
                                     </div>
-                                    <div class="pricing-amount1"><p>{{ $basic->symbol }}</p><span> {{ $package->price }}</span></div>
+                                    <div class="pricing-amount1"><p>{{-- $basic->symbol --}}</p><span> {{number_format( $package->price,-3,',','.') }}</span></div>
                                     <div class="pricing-info1">
                                         <ul>
                                             @if(@unserialize($package->features))
@@ -50,7 +50,7 @@
                                             @endif
                                         </ul>
                                     </div>
-                                    <a href="{{ route('plan.purchase', $package->id) }}">Buy Now</a>
+                                    <a href="{{ route('plan.purchase', $package->id) }}">Mua Ngay</a>
                                 </div>
                                 <!-- Pricing List1 End -->
                             </div>

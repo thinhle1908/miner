@@ -87,7 +87,7 @@
             <div class="col-md-9 text-right">
                 <ul id="header-menu" class="header-navigation">
                     <li><a href="{{ route('home') }}">TRANG CHỦ</a></li>
-                    <li><a class="page-scroll" href="#">ĐỒNG TIỀN <i class="fa fa-angle-down"></i></a>
+                    <li><a class="page-scroll" href="#">LOẠI TIỀN <i class="fa fa-angle-down"></i></a>
                         @php
                             $categories = \App\Category::all();
                         @endphp
@@ -103,7 +103,7 @@
                     </li>
                     <li><a href="{{ route('about') }}">GIỚI THIỆU</a></li>
                     @foreach($menu as $m)
-                        <li><a href="{{ url('menu') }}/{{ $m->id }}/{{ urldecode(strtolower(str_slug($m->name))) }}">SẢN PHẨM{{-- $m->name --}}</a></li>
+                        <li><a href="{{ url('menu') }}/{{ $m->id }}/{{ urldecode(strtolower(str_slug($m->name))) }}">{{$m->name }}</a></li>
                     @endforeach
                     <li><a href="{{ route('faqs') }}">Faq</a></li>
                     <li><a href="{{ route('contact') }}">LIÊN HỆ</a></li>
@@ -192,7 +192,7 @@
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
                         <div class="footer-thumb"><i class="fa fa-headphones"></i></div>
                         <div class="footer-content">
-                            <p>24/7 Customer Support</p>
+                            <p>Hỗ trợ khách hàng 24/7</p>
                         </div>
                     </li>
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="2s">
@@ -204,7 +204,7 @@
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="3s">
                         <div class="footer-thumb"><i class="fa fa-comments-o"></i></div>
                         <div class="footer-content">
-                            <p>Friendly Support Ticket</p>
+                            <p>Vé hỗ trợ thân thiện</p>
                         </div>
                     </li>
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="4s">

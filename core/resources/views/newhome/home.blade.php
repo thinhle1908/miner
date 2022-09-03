@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-header">
-                        <h2>WHAT IS <span> {{ $basic_setting->title }}</span></h2>
+                        <h2><span> {{ $basic_setting->title }}</span> LÀ GÌ</h2>
                         <p><img src="{{asset('assets/images/logo/icon.png') }}" alt="icon"></p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
             <div class="col-md-12">
                 <div class="section-title text-center">
                     <div class="sale-header wow slideInDown" data-wow-duration="2s">
-                        <h2>about <span> {{ $site_title }} </span></h2>
+                        <h2>giới thiệu về <span> {{ $site_title }} </span></h2>
                     </div>
                     <div class="sale-content">
                          <div class="row">
@@ -127,7 +127,7 @@
             <div class="col-md-12">
                 <div class="section-title text-center wow slideInLeft" data-wow-duration="2s">
                     <div class="section-header">
-                        <h2>Our <span> Services </span></h2>
+                        <h2><span> Dịch Vụ </span> Của Chúng Tôi</h2>
                         <p><img src="{{asset('assets/images/logo/icon.png') }}" alt="icon"></p>
                     </div>
                     <p>{!! $page->service_subtitle !!}</p>
@@ -160,12 +160,12 @@
             <div class="col-md-12">
                 <!-- Sale Header Start -->
                 <div class="sale-header">
-                    <h2>New <span>Customer?</span></h2>
+                    <h2><span>Khách Hàng</span> Mới?</h2>
                 </div>
                 <!-- Sale header End -->
                 <!-- Sale Content Start -->
                 <div class="sale-content" style="text-align: center;">
-                    <a class="btn btn-success" style="padding: 8px 20px;" href="{{ route('how.works') }}">How It Works?</a>
+                    <a class="btn btn-success" style="padding: 8px 20px;" href="{{ route('how.works') }}">Nó hoạt động như thế nào?</a>
                 </div>
                 <!-- Sale content end -->
             </div>
@@ -181,7 +181,7 @@
             <div class="col-md-12">
                 <div class="section-title text-center section-padding padding-bottom-0 wow slideInLeft" data-wow-duration="2s">
                     <div class="section-header">
-                        <h2>Our awesome<span> plans</span></h2>
+                        <h2><span>kế hoạch</span> tuyệt vời của chúng tôi</h2>
                         <p><img src="{{asset('assets/images/logo/icon.png') }}" alt="icon"></p>
                     </div>
                     <p>{!! $page->plan_subtitle !!}</p>
@@ -207,9 +207,9 @@
                                     <div class="pricing-header1">
                                         <h5>{{ $package->title }}</h5>
                                         <p>{{ $package->speed }}</p>
-                                        <p class="text-center" style="text-transform: uppercase;font-size: 12px;color: #fff;">Get {{ $package->return }} {{ $package->category->code }} Per Day For {{ $package->period . ' ' . $package->ptyp }}</p>
+                                        <p class="text-center" style="text-transform: uppercase;font-size: 12px;color: #fff;">Nhận {{ $package->return }} {{ $package->category->code }} Mỗi Ngày Trong {{ $package->period . ' ' . $package->ptyp }}</p>
                                     </div>
-                                    <div class="pricing-amount1"><p>{{ $basic->symbol }}</p><span> {{ $package->price }}</span></div>
+                                    <div class="pricing-amount1"><p>{{-- $basic->symbol --}}</p><span> {{number_format( $package->price,-3,',','.') }}</span></div>
                                     <div class="pricing-info1">
                                         <ul>
                                             @if(@unserialize($package->features))
@@ -221,7 +221,7 @@
                                             @endif
                                         </ul>
                                     </div>
-                                    <a href="{{ route('miner', $key) }}">More Plan</a>
+                                    <a href="{{ route('miner', $key) }}">Kế Hoạch Khác</a>
                                 </div>
                                 <!-- Pricing List1 End -->
                             </div>
@@ -247,7 +247,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-header wow zoomInDown" data-wow-duration="2s">
-                    <h2>OUR <span> PARTNER </span></h2>
+                    <h2><span> ĐỐI TÁC </span>CỦA CHÚNG TÔI</h2>
                     <p><img src="{{asset('assets/images/logo/icon.png') }}" alt="icon"></p>
                 </div><!-- section-heading -->
                 <div class="section-wrapper">
@@ -283,7 +283,7 @@
         <div class="col-md-12">
           <!-- section header start -->
           <div class="section-header wow bounceInLeft" data-wow-duration="2s">
-            <h2>What <span>People Say</span>!</h2>
+            <h2><span>Mọi Người</span> Về Chúng Tôi!</h2>
            <p><img src="{{asset('assets/images/logo/icon.png') }}" alt="icon"></p>
           </div>
         <!-- section header end -->

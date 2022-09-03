@@ -22,7 +22,7 @@
           <div class="col-md-12">
              <!-- section header start -->
             <div class="section-header">
-              <h3><span>General</span> FAQ</h3>
+              <h3><span>Câu Hỏi</span> Chung</h3>
                  <p><img src="{{asset('assets/images/logo/icon.png') }}" alt="icon"></p>
             </div>
           <!-- section header end -->

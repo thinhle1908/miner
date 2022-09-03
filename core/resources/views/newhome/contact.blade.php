@@ -27,26 +27,26 @@
                                 <div class="col-md-4">
                                   <div class="contact-content">
                                     <div class="contact-header contact-form">
-                                      <h2>Get In Touch</h2>
+                                      <h2>Liên Lạc</h2>
                                     </div>
                                     <div class="contact-list">
                                       <ul>
                                         <li>
                                           <div class="contact-thumb"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
                                           <div class="contact-text">
-                                            <p>Address:<span>{{ $basic->address }}</span></p>
+                                            <p>Địa chỉ:<span>{{ $basic->address }}</span></p>
                                           </div>
                                         </li>
                                         <li>
                                           <div class="contact-thumb"><i class="fa fa-phone" aria-hidden="true"></i></div>
                                           <div class="contact-text">
-                                            <p>Call Us :<span>{{ $basic->phone }}</span></p>
+                                            <p>Số điện thoại :<span>{{ $basic->phone }}</span></p>
                                           </div>
                                         </li>
                                         <li>
                                           <div class="contact-thumb"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
                                           <div class="contact-text">
-                                            <p>Mail Us :<span>{{ $basic->email }}</span></p>
+                                            <p>Thư điện tử :<span>{{ $basic->email }}</span></p>
                                           </div>
                                         </li>
                                       </ul>
@@ -58,7 +58,7 @@
                                 <div class="form-column col-md-8 col-sm-12 ">
                                     <!-- Contact Form -->
                                     <div class="contact-form ">
-                                        <h2>Send Message Us</h2>
+                                        <h2>Gửi tin nhắn cho chúng tôi</h2>
                                        
                                             @if($errors->any())
                                                 @foreach ($errors->all() as $error)
@@ -77,15 +77,15 @@
                                     {!! csrf_field() !!}
                                             <div class="row clearfix">
                                                 <div class="col-md-6  col-xs-12 form-group">
-                                                    <input type="text" name="name" placeholder="Your Name*" required="">
+                                                    <input type="text" name="name" placeholder="Tên của bạn*" required="">
                                                 </div>
                 
                                                 <div class="col-md-6  col-xs-12 form-group">
-                                                    <input type="email" name="email" placeholder="Email Address*" required="">
+                                                    <input type="email" name="email" placeholder="Địa chỉ email*" required="">
                                                 </div>
                 
                                                 <div class=" col-md-12   form-group">
-                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                    <textarea name="message" placeholder="Nội Dung..."></textarea>
                                                 </div>
                 
                                                 <div class=" col-md-12 form-group">

@@ -69,7 +69,7 @@ class HomeController extends Controller
     public function getHome()
     {
         $data['basic_setting'] = BasicSetting::first();
-        $data['page_title'] = "Home Page";
+        $data['page_title'] = "Trang Chủ";
         $data['features'] = Feature::all();
         $data['slider_text'] = Slider::all()->first();
         $data['partners'] = Partner::all();
@@ -111,7 +111,7 @@ class HomeController extends Controller
     }
     public function getAbout()
     {
-        $data['page_title'] = 'About Page';
+        $data['page_title'] = 'Trang Giới Thiệu';
         return view('newhome.about',$data);
     }
 
@@ -145,13 +145,13 @@ class HomeController extends Controller
     }
     public function getFaqs()
     {
-        $data['page_title'] = 'FAQS Page';
+        $data['page_title'] = 'Trang hỏi đáp thắc mắc';
         $data['faqs'] = Faqs::orderBy('id','desc')->paginate(10);
         return view('newhome.faqs',$data);
     }
     public function getContact()
     {
-        $data['page_title'] = 'Contact Page';
+        $data['page_title'] = 'Trang Liên Hệ';
         return view('newhome.contact',$data);
     }
     public function submitContact(Request $request)

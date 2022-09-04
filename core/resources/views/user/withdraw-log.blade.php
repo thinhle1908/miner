@@ -21,11 +21,11 @@
 
                         <thead>
                         <tr>
-                            <th>Date</th>
-                            <th>Transaction ID</th>
-                            <th>Coin / Method</th>
-                            <th>Withdraw Amount</th>
-                            <th>Status</th>
+                            <th>Ngày</th>
+                            <th>ID giao dịch</th>
+                            <th>Đồng xu / Phương thức</th>
+                            <th>Rút tiền</th>
+                            <th>Trạng thái</th>
                         </tr>
                         </thead>
 
@@ -53,11 +53,11 @@
                                 <td>{{ $p->amount }} - {{ $currency }}</td>
                                 <td>
                                     @if($p->status == 0 )
-                                        <span class="label bold label-warning"><i class="fa fa-spinner"></i> Pending</span>
+                                        <span class="label bold label-warning"><i class="fa fa-spinner"></i> Chưa giải quyết</span>
                                     @elseif($p->status == 1)
-                                        <span class="label bold label-success"><i class="fa fa-check"></i> Complete</span>
+                                        <span class="label bold label-success"><i class="fa fa-check"></i> Hoàn thành</span>
                                     @elseif($p->status == 2)
-                                        <span class="label bold label-danger"><i class="fa fa-times"></i> Refund</span>
+                                        <span class="label bold label-danger"><i class="fa fa-times"></i> Đền bù</span>
                                     @endif
                                 </td>
                             </tr>

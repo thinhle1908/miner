@@ -23,7 +23,7 @@
                         <div class="col-md-7">
                             <div class="portlet box blue">
                                 <div class="portlet-title">
-                                    <div class="caption uppercase bold"><i class="fa fa-edit"></i> CHANGE Breadcrumb</div>
+                                    <div class="caption uppercase bold"><i class="fa fa-edit"></i> BIẾN ĐỔI Breadcrumb</div>
                                 </div>
                                 <div class="portlet-body">
 
@@ -32,7 +32,7 @@
                                     <div class="row">
 
                                         <div class="form-group">
-                                            <label class="col-md-12"><strong style="text-transform: uppercase;">Change Breadcrumb</strong></label>
+                                            <label class="col-md-12"><strong style="text-transform: uppercase;">Thay đổi Breadcrumb</strong></label>
                                             <div class="col-sm-12">
                                                 <div class="fileinput fileinput-new" data-provides="fileinput">
                                                     <div class="input-group input-large">
@@ -41,12 +41,12 @@
                                                             <span class="fileinput-filename"> </span>
                                                         </div>
                                                         <span class="input-group-addon btn default btn-file">
-                                                                    <span class="fileinput-new bold"> Change Breadcrumb </span>
-                                                                    <span class="fileinput-exists bold"> Change </span>
+                                                                    <span class="fileinput-new bold"> Thay đổi Breadcrumb </span>
+                                                                    <span class="fileinput-exists bold"> Thay đổi </span>
                                                                     <input type="file" name="breadcrumb"> </span>
                                                         <a href="javascript:;" class="input-group-addon btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
                                                     </div>
-                                                    <code>Breadcrumb Mimes Type : png,jpeg,jpg | Resize 1280X560</code>
+                                                    <code>Breadcrumb Mimes Loại: png, jpeg, jpg | Thay đổi kích thước 1280X560</code>
                                                 </div>
                                             </div>
                                             <br>
@@ -57,7 +57,7 @@
                                         <br>
                                         <br>
                                         <div class="form-group">
-                                            <div class="col-sm-12"> <button type="submit" class="btn btn-primary bold btn-block"><i class="fa fa-send"></i> UPDATE</button></div>
+                                            <div class="col-sm-12"> <button type="submit" class="btn btn-primary bold btn-block"><i class="fa fa-send"></i> CẬP NHẬT</button></div>
                                         </div>
                                     </div>
                                     {!! Form::close() !!}
@@ -67,7 +67,7 @@
                         <div class="col-md-5">
                             <div class="portlet box blue">
                                 <div class="portlet-title">
-                                    <div class="caption uppercase bold"><i class="fa fa-photo"></i> Current Image</div>
+                                    <div class="caption uppercase bold"><i class="fa fa-photo"></i>Hình ảnh hiện tại</div>
                                 </div>
                                 <div class="portlet-body">
                                     <img class="img-responsive" src="{{ asset('assets/images/logo/bb.png') }}" alt="logo">

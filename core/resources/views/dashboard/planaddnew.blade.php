@@ -36,13 +36,13 @@
                                 <div class="col-md-4">
 
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Plan Title</label>
+                                        <label class="col-md-12 bold uppercase">TIÊU ĐỀ KẾ HOẠCH</label>
                                         <div class="col-md-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <i class="fa fa-font"></i>
                                                 </span>
-                                                <input type="text" class="form-control" placeholder="Plan Title" name="title">
+                                                <input type="text" class="form-control" placeholder="TIÊU ĐỀ KẾ HOẠCH" name="title">
                                             </div>
                                         </div>
                                     </div>
@@ -52,10 +52,10 @@
                                 <div class="col-md-4">
 
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Price</label>
+                                        <label class="col-md-12 bold uppercase">GIÁ BÁN</label>
                                         <div class="col-md-12">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Price" name="price">
+                                                <input type="text" class="form-control" placeholder="GIÁ BÁN" name="price">
                                                 <span class="input-group-addon">
                                                     {{ $basic->currency }}
                                                 </span>
@@ -67,13 +67,13 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Speed</label>
+                                        <label class="col-md-12 bold uppercase">TỐC ĐỘ</label>
                                         <div class="col-md-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <i class="fa fa-space-shuttle"></i>
                                                 </span>
-                                                <input type="text" class="form-control" placeholder="Speed" name="speed">
+                                                <input type="text" class="form-control" placeholder="TỐC ĐỘ" name="speed">
                                             </div>
                                         </div>
                                     </div>
@@ -85,7 +85,7 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Miner</label>
+                                        <label class="col-md-12 bold uppercase">LOẠI TIỀN</label>
                                         <div class="col-md-12">
                                             <select name="category_id" id="category_id" class="form-control">
                                                 @if(count($categories))
@@ -100,7 +100,7 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Description</label>
+                                        <label class="col-md-12 bold uppercase">MÔ TẢ</label>
                                         <div class="col-md-12">
                                             <input name="description" id="description" class="form-control">
                                         </div>
@@ -108,9 +108,9 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">PLAN STATUS</label>
+                                        <label class="col-md-12 bold uppercase">KẾ HOẠCH TRẠNG THÁI</label>
                                         <div class="col-md-12">
-                                            <input data-toggle="toggle" checked data-onstyle="success" data-offstyle="danger" data-on="Active" data-off="Deactive" data-width="100%" type="checkbox" name="status">
+                                            <input data-toggle="toggle" checked data-onstyle="success" data-offstyle="danger" data-on="HOẠT ĐỘNG" data-off="KHÔNG HOẠT ĐỘNG" data-width="100%" type="checkbox" name="status">
                                         </div>
                                     </div>
                                 </div>
@@ -121,15 +121,15 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Period</label>
+                                        <label class="col-md-12 bold uppercase">GIAI ĐOẠN</label>
                                         <div class="col-md-12">
                                             <div class="input-group">
-                                                <input type="number" class="form-control" value="2" placeholder="Period" id="period" name="period">
+                                                <input type="number" class="form-control" value="2" placeholder="GIAI ĐOẠN" id="period" name="period">
                                                 <span class="input-group-addon">
                                                     <select name="ptyp" id="ptyp">
-                                                        <option value="day">Day</option>
-                                                        <option value="month">Month</option>
-                                                        <option value="year" selected>Year</option>
+                                                        <option value="day">Ngày</option>
+                                                        <option value="month">Tháng</option>
+                                                        <option value="year" selected>Năm</option>
                                                     </select>
                                                 </span>
                                             </div>
@@ -139,10 +139,10 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Return Amount (Per Day)</label>
+                                        <label class="col-md-12 bold uppercase">TRẢ LẠI SỐ TIỀN (MỖI NGÀY)</label>
                                         <div class="col-md-12">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Return Per Day" name="return">
+                                                <input type="text" class="form-control" placeholder="TRẢ LẠI SỐ TIỀN" name="return">
                                                 <span class="input-group-addon" id="coin_code">
                                                     {{ $basic->currency }}
                                                 </span>
@@ -155,7 +155,7 @@
 
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label class="col-md-12 bold uppercase">Feature <ins class="ind">1</ins></label>
+                                            <label class="col-md-12 bold uppercase">ĐẶC ĐIỂM  <ins class="ind">1</ins></label>
                                             <div class="col-md-12">
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" name="features[]">
@@ -172,14 +172,14 @@
 
                             <div class="form-group">
                                 <div class="col-md-4 col-md-offset-8">
-                                    <button class="btn btn-success btn-block" id="additem">Add Feature</button>
+                                    <button class="btn btn-success btn-block" id="additem">Thêm Đặc Điểm</button>
                                 </div>
                             </div>
                         </div>
                         <div class="form-actions">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn green btn-block">Save</button>
+                                    <button type="submit" class="btn green btn-block">Lưu</button>
                                 </div>
                             </div>
                         </div>

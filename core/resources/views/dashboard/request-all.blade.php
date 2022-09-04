@@ -17,16 +17,16 @@
                         <thead>
                         <tr>
                             <th>ID#</th>
-                            <th>Request Date</th>
-                            <th>Transaction ID</th>
-                            <th>User Name</th>
+                            <th>Ngày yêu cầu</th>
+                            <th>ID giao dịch</th>
+                            <th>Tên tài khoản</th>
                             {{--<th>Email</th>--}}
-                            <th>Deposit Method</th>
-                            <th>Deposit Balance</th>
-                            <th>Deposit Charge</th>
-                            <th>Net Amount</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                            <th>Phương thức gửi tiền</th>
+                            <th>Khoản đặt cọc</th>
+                            <th>Phí đặt cọc</th>
+                            <th>Số lượng tịnh</th>
+                            <th>Trạng thái</th>
+                            <th>Hoạt động</th>
                         </tr>
                         </thead>
 
@@ -72,11 +72,11 @@
                                    
                                  <td>
                                     @if($p->status == 1)
-                                        <span class="label label-primary bold uppercase"><i class="fa fa-check"></i> Approved</span>
+                                        <span class="label label-primary bold uppercase"><i class="fa fa-check"></i> Đã được phê duyệt</span>
                                     @elseif($p->status == 2)
-                                            <span class="label label-danger bold uppercase"><i class="fa fa-times"></i> Cancel</span>
+                                            <span class="label label-danger bold uppercase"><i class="fa fa-times"></i> Hủy bỏ</span>
                                      @elseif($p->status == 0)
-                                            <span class="label label-warning bold uppercase"><i class="fa fa-spinner"></i> Pending</span>
+                                            <span class="label label-warning bold uppercase"><i class="fa fa-spinner"></i> Chưa giải quyết</span>
                                     @endif
 
                                    
@@ -102,11 +102,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-trash'></i> <strong>Confirmation..!</strong></h4>
+                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-trash'></i> <strong>Xác nhận ..!</strong></h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure you Want to Approve This Deposit Request..?</strong>
+                    <strong>Bạn có chắc chắn Muốn Phê duyệt Yêu cầu Gửi tiền này ..?</strong>
                 </div>
 
                 <div class="modal-footer">
@@ -114,8 +114,8 @@
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" class="abir_id" value="0">
 
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Yes. I am Sure.</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Đóng</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Đúng. Tôi chắc chắn.</button>
                     </form>
                 </div>
 

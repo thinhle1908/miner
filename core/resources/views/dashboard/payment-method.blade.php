@@ -14,7 +14,7 @@
                 <div class="portlet-title">
                     <div class="caption font-red-sunglo">
                         <i class="icon-settings font-red-sunglo"></i>
-                        <span class="caption-subject bold uppercase">Payment Gateway</span>
+                        <span class="caption-subject bold uppercase">CỔNG THANH TOÁN</span>
                     </div>
                 </div>
                 <div class="portlet-body form">
@@ -27,20 +27,20 @@
                                         <i class="fa fa-picture-o"></i> Logo
                                     </th>
                                     <th>
-                                        <i class="fa fa-credit-card"></i> Gateway Name
+                                        <i class="fa fa-credit-card"></i> Tên Cổng
                                     </th>
                                     <th>
-                                        Conversion Rate
+                                        Tỷ Lệ Chuyển Đổi
                                     </th>
                                     <th>
-                                        Charge Per Transaction
+                                        Tính Phí Mỗi Giao Dịch
                                     </th>
 
                                     <th>
-                                        Status
+                                        Trạng Thái
                                     </th>
                                     <th>
-                                        Action
+                                        Hoạt Động
                                     </th>
                                 </tr>
                                 </thead>
@@ -57,16 +57,16 @@
                                             1 USD = <strong>{{$gateway->rate}} </strong> {{$basic->currency}}
                                         </td>
                                         <td>
-                                            Fixed: <strong>{{$gateway->fix}} {{ $basic->currency }}</strong> <br/>   Percentage: <strong>{{$gateway->percent}} %</strong>
+                                            Đã Sửa: <strong>{{$gateway->fix}} {{ $basic->currency }}</strong> <br/>   Phần Trăm: <strong>{{$gateway->percent}} %</strong>
                                         </td>
                                         <td>
                                             {{ $gateway->status == "1" ? 'Active' : 'Deactive' }}
                                         </td>
                                         <td>
                                             <a href="" class="btn btn-outline btn-circle btn-sm blue" data-toggle="modal" data-target="#viewModal{{$gateway->id}}">
-                                                <i class="fa fa-eye"></i> View </a>
+                                                <i class="fa fa-eye"></i> Xem </a>
                                             <a href="" class="btn btn-outline btn-circle btn-sm purple" data-toggle="modal" data-target="#Modal{{$gateway->id}}">
-                                                <i class="fa fa-edit"></i> Edit </a>
+                                                <i class="fa fa-edit"></i> Chỉnh Sửa </a>
                                         </td>
 
                                     </tr>

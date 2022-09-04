@@ -9,7 +9,7 @@
             <div class="portlet light bordered">
                 <div class="portlet-title">
                     <div class="caption">
-                        <a href="{{ route('menu-create') }}" class="btn btn-primary"><i class="fa fa-plus"></i> Create New Menu</a>
+                        <a href="{{ route('menu-create') }}" class="btn btn-primary"><i class="fa fa-plus"></i> Tạo Menu Mới</a>
                     </div>
                     <div class="tools">
                         <a href="javascript:;" class="collapse"> </a>
@@ -28,13 +28,13 @@
                                 {!! $m->description !!}
                             </p>
                             <div class="col-md-6">
-                                <a href="{{ route('menu-edit',$m->id) }}" class="btn blue btn-block margin-top-20"><i class="fa fa-edit"></i> Edit Menu </a>
+                                <a href="{{ route('menu-edit',$m->id) }}" class="btn blue btn-block margin-top-20"><i class="fa fa-edit"></i> Chỉnh Sửa Menu </a>
                             </div>
                             <div class="col-md-6">
                                 <button type="button" class="btn btn-danger btn-block margin-top-20 delete_button"
                                         data-toggle="modal" data-target="#DelModal"
                                         data-id="{{ $m->id }}">
-                                    <i class='fa fa-trash'></i> Delete Menu
+                                    <i class='fa fa-trash'></i> Xóa Menu
                                 </button>
                             </div>
 
@@ -53,11 +53,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-trash'></i> Delete !</h4>
+                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-trash'></i> Xóa !</h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure you want to Delete ?</strong>
+                    <strong>Bạn có chắc chắn muốn xóa ?</strong>
                 </div>
 
                 <div class="modal-footer">
@@ -66,8 +66,8 @@
                         {{ method_field('DELETE') }}
                         <input type="hidden" name="id" class="abir_id" value="0">
 
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-danger">DELETE</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                        <button type="submit" class="btn btn-danger">XÓA BỎ</button>
                     </form>
                 </div>
 

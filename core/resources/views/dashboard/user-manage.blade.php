@@ -20,13 +20,13 @@
                             <thead>
                             <tr>
                                 <th>ID#</th>
-                                <th>Register At</th>
-                                <th>Name</th>
-                                <th>User Name</th>
+                                <th>Đăng Ký Lúc</th>
+                                <th>Tên</th>
+                                <th>Tên Tài Khoản</th>
                                 <th>Email</th>
-                                <th>Phone</th>
-                                <th>Balance</th>
-                                <th>Action</th>
+                                <th>Số Điện Thoại</th>
+                                <th>Số Dư</th>
+                                <th>Hoạt Động</th>
                             </tr>
                             </thead>
 
@@ -49,16 +49,16 @@
                                             <button type="button" class="btn btn-danger bold uppercase btn-sm block_button"
                                                     data-toggle="modal" data-target="#blockModal"
                                                     data-id="{{ $p->id }}">
-                                                <i class='fa fa-times'></i> Block User
+                                                <i class='fa fa-times'></i> Chặn Người Dùng
                                             </button>
                                         @else
                                             <button type="button" class="btn btn-primary bold uppercase btn-sm block_button"
                                                     data-toggle="modal" data-target="#unblockModal"
                                                     data-id="{{ $p->id }}">
-                                                <i class='fa fa-check'></i> Unblock User
+                                                <i class='fa fa-check'></i> Bỏ Chặn Người Dùng
                                             </button>
                                         @endif
-                                            <a href="{{ route('user-details',$p->id) }}" class="btn  bold uppercase btn-success btn-sm"><i class="fa fa-eye"></i> View Details</a>
+                                            <a href="{{ route('user-details',$p->id) }}" class="btn  bold uppercase btn-success btn-sm"><i class="fa fa-eye"></i> Xem Chi Tiết</a>
                                     </td>
 
                                 </tr>
@@ -78,7 +78,7 @@
     @else
 
         <div class="text-center">
-            <h3>No User Found</h3>
+            <h3>Không Tìm Thấy Người Dùng</h3>
         </div>
     @endif
 
@@ -87,11 +87,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-times'></i> Block User!</h4>
+                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-times'></i> Chặn người dùng!</h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure you want to Block this user ?</strong>
+                    <strong>Bạn có chắc chắn muốn chặn người dùng này?</strong>
                 </div>
 
                 <div class="modal-footer">
@@ -99,8 +99,8 @@
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" class="abir_id" value="0">
 
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Yes Sure..!</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Đóng</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Vâng Chắc chắn ..!</button>
                     </form>
                 </div>
 
@@ -112,11 +112,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-check'></i> Unblock User!</h4>
+                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-check'></i>Mở khoá người dùng!</h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure you want to Unblock this user ?</strong>
+                    <strong>Bạn có chắc chắn muốn Bỏ chặn người dùng này không?</strong>
                 </div>
 
                 <div class="modal-footer">
@@ -124,8 +124,8 @@
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" class="abir_id" value="0">
 
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Yes Sure..!</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Đóng</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Vâng Chắc chắn ..!</button>
                     </form>
                 </div>
 

@@ -20,11 +20,11 @@
                         <thead>
                         <tr>
                             <th> ID </th>
-                            <th> Title </th>
-                            <th> Price </th>
-                            <th> Speed </th>
-                            <th> Miner </th>
-                            <th> Edit </th>
+                            <th> Tiêu đề </th>
+                            <th> Giá bán </th>
+                            <th> Tốc độ </th>
+                            <th> Loại tiền </th>
+                            <th> Chỉnh sửa </th>
                         </tr>
                         </thead>
                         <tbody>

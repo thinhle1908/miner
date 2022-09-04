@@ -8,7 +8,7 @@
                 <div class="portlet-title">
                     <div class="caption">
                         <i class="icon-list font-blue"></i>
-                        <span class="caption-subject font-green bold uppercase">Slider/Banner Settings</span>
+                        <span class="caption-subject font-green bold uppercase">Cài đặt Thanh trượt / Biểu ngữ</span>
                     </div>
                 </div>
                 <div class="portlet-body">
@@ -18,25 +18,25 @@
                                 <div class="form-group">
                                     <span class="btn green fileinput-button">
                                                 <i class="fa fa-plus"></i>
-                                                <span> Change Background Image </span>
+                                                <span>Thay đổi hình nền</span>
                                                 <input type="file" name="image" class="form-control input-lg">
                                             </span>
-                                            <span class="btn-danger">Standard Image Size: 1920 x 900 px</span>
+                                            <span class="btn-danger">Kích cỡ hình chuẩn: 1920 x 900 px</span>
                                 </div>
                                 <div class="form-group">
-                                    <label for="bold">Bold Text</label>
+                                    <label for="bold">Chữ in đậm</label>
                                     <textarea class="form-control" id="bold" name="bold">
                                       {!! $slide->title !!}
                                     </textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label for="small">Small Text</label>
+                                    <label for="small">Văn bản nhỏ</label>
                                     <textarea class="form-control" id="small" name="small">
                                       {!! $slide->subtitle !!}
                                     </textarea>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-lg btn-block btn-success" >Update</button>
+                                    <button type="submit" class="btn btn-lg btn-block btn-success" >Cập nhật</button>
                                 </div>
                             </form>
                 </div>

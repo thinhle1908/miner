@@ -17,14 +17,14 @@
                         <thead>
                         <tr>
                             <th>ID#</th>
-                            <th>Request Date</th>
-                            <th>User Name</th>
+                            <th>Ngày yêu cầu</th>
+                            <th>Tên tài khoản</th>
                             <th>Email</th>
-                            <th>Deposit Method</th>
-                            <th>Deposit Balance</th>
-                            <th>Deposit Charge</th>
-                            <th>Net Amount</th>
-                            <th>Action</th>
+                            <th>Phương thức gửi tiền</th>
+                            <th>Khoản đặt cọc</th>
+                            <th>Phí đặt cọc</th>
+                            <th>Số lượng tịnh</th>
+                            <th>Hoạt động</th>
                         </tr>
                         </thead>
 
@@ -66,12 +66,12 @@
                                 </td>
                                 <td>{{ $p->net_amount }} - {{ $basic->currency }}</td>
                                 <td>
-                                    <a href="" class="btn btn-primary"><i class="fa fa-eye"></i> View</a>
+                                    <a href="" class="btn btn-primary"><i class="fa fa-eye"></i> Xem</a>
 
                                     <button type="button" class="btn btn-danger delete_button"
                                             data-toggle="modal" data-target="#DelModal"
                                             data-id="{{ $p->id }}">
-                                        <i class='fa fa-check'></i> Approve
+                                        <i class='fa fa-check'></i> Chấp thuận
                                     </button>
                                 </td>
 
@@ -90,11 +90,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-trash'></i> <strong>Confirmation..!</strong></h4>
+                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-trash'></i> <strong>Xác nhận ..!</strong></h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure you Want to Approve This Deposit Request..?</strong>
+                    <strong>Bạn có chắc chắn Muốn Phê duyệt Yêu cầu Gửi tiền này ..?</strong>
                 </div>
 
                 <div class="modal-footer">
@@ -102,8 +102,8 @@
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" class="abir_id" value="0">
 
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        <button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Yes. I am Sure.</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Đóng</button>
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Đúng. Tôi chắc chắn.</button>
                     </form>
                 </div>
 

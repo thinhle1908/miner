@@ -31,7 +31,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-send"></i> Update About</button>
+                                    <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-send"></i>Cập nhật Giới thiệu</button>
                                 </div>
                             </div>
 

@@ -35,7 +35,7 @@
                                             @endif
                                         </ul>
                                     </div>
-                                    <a href="{{ route('miner', $key) }}">More Plan</a>
+                                    <a href="{{ route('miner', $key) }}">Thêm Kế Hoạch</a>
                                 </div>
                                 <!-- Pricing List1 End -->
                             </div>

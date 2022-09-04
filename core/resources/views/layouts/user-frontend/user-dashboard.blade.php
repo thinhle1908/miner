@@ -66,23 +66,23 @@
 
                         <li>
                             <a href="{!! route('user-dashboard') !!}" class="nav-link ">
-                                <span class="title">Dashboard</span>
+                                <span class="title">Bảng Điều Khiển</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">Package <i class="fa fa-caret-down"></i></a>
+                            <a href="#">Gói <i class="fa fa-caret-down"></i></a>
                             <ul class="mega-menu mega-menu1 mega-menu2 menu-postion">
 
                                     <li class="mega-list mega-list1">
                                         <a href="{!! route('plan.all') !!}" class="nav-link ">
-                                            <span class="title">All Package</span>
+                                            <span class="title">Tất Cả Các Gói</span>
                                         </a>
                                     </li>
 
                                     <li class="mega-list mega-list1">
                                         <a href="{!! route('plan.purchased') !!}" class="nav-link ">
-                                            <span class="title">Purchased Plan</span>
+                                            <span class="title">Gói đã mua</span>
                                         </a>
                                     </li>
                             </ul>
@@ -94,23 +94,23 @@
                                     <li class="mega-list mega-list1">
                                
                                     <a href="{!! route('withdraw-request') !!}" class="nav-link ">
-                                        <span class="title"> Withdraw Fund</span>
+                                        <span class="title"> Rút tiền</span>
                                     </a>
 
                                     <a href="{!! route('withdraw-log') !!}" class="nav-link ">
-                                        <span class="title"> Withdraw History</span>
+                                        <span class="title"> Lịch Sử Rút Tiền</span>
                                     </a>
 
                                     <a href="{!! route('deposit-fund') !!}" class="nav-link ">
-                                        <span class="title">Deposit Fund</span>
+                                        <span class="title">Quỹ tiền gửi</span>
                                     </a>
                              
                                     <a href="{!! route('deposit-history') !!}" class="nav-link ">
-                                        <span class="title">Deposit History</span>
+                                        <span class="title">Lịch sử tiền gửi</span>
                                     </a>
                                
                                     <a href="{!! route('user-activity') !!}" class="nav-link ">
-                                        <span class="title">Transaction Log</span>
+                                        <span class="title">Nhật ký giao dịch </span>
                                     </a>
                                 </li>
 
@@ -122,15 +122,15 @@
                             <li><a href="#">Hi. {{ Auth::user()->name }} <i class="fa fa-caret-down"></i></a>
                                 <ul class="mega-menu mega-menu1 mega-menu2 menu-postion-3">
                                     <li class="mega-list mega-list1">
-                                        <a href="{!! route('edit-profile') !!}">Edit Profile </a>
-                                        <a href="{!! route('wallet.settings') !!}">Wallet Settings </a>
-                                        <a href="{{ route('go2fa') }}">2FA Security</a>
-                                        <a href="{!! route('change-password') !!}">Change Password </a>
+                                        <a href="{!! route('edit-profile') !!}">Chỉnh sửa hồ sơ </a>
+                                        <a href="{!! route('wallet.settings') !!}">Cài đặt Ví</a>
+                                        <a href="{{ route('go2fa') }}">Bảo mật 2FA</a>
+                                        <a href="{!! route('change-password') !!}">Đổi mật khẩu </a>
                                         <a href="{!! route('support-all') !!}" class="nav-link nav-toggle">
-                                            <span class="title">Get Support</span></a>
+                                            <span class="title">Nhận hỗ trợ</span></a>
                                         <a href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"></i> Logout
+                                                     document.getElementById('logout-form').submit();"></i> Đăng xuất
                                         </a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
@@ -142,8 +142,8 @@
                             <li><a href="#">Account <i class="fa fa-caret-down"></i></a>
                                 <ul class="mega-menu mega-menu1 mega-menu2 .menu-postion-3">
                                      <li class="mega-list mega-list1">
-                                        <a href="{{ route('login') }}">Login</a>
-                                        <a href="{{ route('register') }}">Register</a>
+                                        <a href="{{ route('login') }}">Đăng nhập</a>
+                                        <a href="{{ route('register') }}">Đăng ký</a>
                                     </li>
                                 </ul>
                             </li>

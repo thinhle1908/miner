@@ -218,13 +218,13 @@
                         <div class="panel-heading"> <strong style="color:#fff; font-size: 20px;">#{{ $support->ticket_number }} - {{ $support->subject }}
                                 <span class="pull-right bold"><b class='btn btn-danger'>
                                     @if($support->status == 1)
-                                         Opened
+                                    Mở ra
                                     @elseif($support->status == 2)
-                                         Answered
+                                    Answered
                                     @elseif($support->status == 3)
-                                        Customer Reply
+                                    Trả lời của khách hàng
                                     @elseif($support->status == 9)
-                                         Closed
+                                    Đã đóng cửa
                                     @endif</b>
                                 </span> </strong> </div>
 
@@ -311,13 +311,13 @@
                                         <div class="row">
 
                                             <div class="col-md-6">
-                                                <button type="submit" class="btn btn-primary btn-lg btn-block"> SUBMIT </button>
+                                                <button type="submit" class="btn btn-primary btn-lg btn-block"> GỬI ĐI </button>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="col-md-12">
                                                     <button type="button" class="btn btn-danger btn-lg btn-block btn-block delete_button"
                                                             data-toggle="modal" data-target="#DelModal">
-                                                        <i class="fa fa-times"></i> Close
+                                                        <i class="fa fa-times"></i> Đóng
                                                     </button>
                                                 </div>
                                             </div>
@@ -342,17 +342,17 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i><strong>Confirmation..!</strong> </h4>
+                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i><strong>Xác nhận ..!</strong> </h4>
                 </div>
                 <div class="modal-body">
-                    <strong>Are you sure you want to Close This Support Ticket..?</strong>
+                    <strong>Bạn có chắc chắn muốn Đóng Vé Hỗ trợ này ..?</strong>
                 </div>
                 <form action="" novalidate></form>
                 <div class="modal-footer">
                     {!! Form::open(['route'=>['admin-support-close'],'id'=>'formSubmit', 'novalidate' => '']) !!}
                     <input type="hidden" name="support_id" value="{{ $support->id }}">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    <button type="submit" id="" class="btn btn-danger"><i class="fa fa-check"></i> Yes I'm Sure..!</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Đóng</button>
+                    <button type="submit" id="" class="btn btn-danger"><i class="fa fa-check"></i>Vâng tôi chắc chắn..!</button>
                     {!! Form::close() !!}
                 </div>
 

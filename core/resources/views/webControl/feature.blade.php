@@ -7,11 +7,11 @@
                 <div class="portlet-title">
                     <div class="caption">
                         <i class="icon-list font-blue"></i>
-                        <span class="caption-subject font-green bold uppercase">What is section Settings</span>
+                        <span class="caption-subject font-green bold uppercase">Phần Cài đặt là gì</span>
                     </div>
                     <div class="actions">
                         <a class="btn btn-circle btn-lg btn-success" data-toggle="modal" data-target="#addslide">
-                            <i class="icon-plus"></i> New Feature
+                            <i class="icon-plus"></i> Tính năng mới
                         </a>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                         @foreach($features as $feature)
                             <div class="col-md-6">
                                 <div class="panel panel-primary">
-                                    <div class="panel-heading">Feature {{$i++}}</div>
+                                    <div class="panel-heading">Tính năng {{$i++}}</div>
                                     <div class="panel-body">
                                         <div class="row">
                                             <div class="col-md-4">
@@ -41,11 +41,11 @@
                                     </div>
                                     <div class="panel-footer">
                                         <a class="btn btn-circle btn-warning" data-toggle="modal" data-target="#editslide{{$feature->id}}">
-                                            <i class="fa fa-edit"></i> Edit
+                                            <i class="fa fa-edit"></i> Chỉnh sửa
                                         </a>
 
                                         <a class="btn btn-circle btn-danger"  href="{{ route('feature.destroy', $feature)}}" data-toggle="confirmation"  data-title="Are You Sure?" data-content="Delete This Slide?">
-                                            <i class="fa fa-trash"></i> Delete
+                                            <i class="fa fa-trash"></i> Xóa bỏ
                                         </a>
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">Edit Slide {{$feature->id}}</h4>
+                                            <h4 class="modal-title">Chỉnh sửa trang trình bày {{$feature->id}}</h4>
                                         </div>
                                         <div class="modal-body">
                                             <form role="form" method="POST" action="{{route('feature.update',$feature->id)}}" enctype="multipart/form-data">
@@ -68,10 +68,10 @@
                                                 <div class="form-group">
                                     <span class="btn green fileinput-button">
                                                 <i class="fa fa-plus"></i>
-                                                <span> Upload Image </span>
+                                                <span> Tải lên hình ảnh </span>
                                                 <input type="file" name="photo" class="form-control input-lg">
                                             </span>
-                                                    <span class="btn-danger">Standard Image Size: 1440 x 750 px</span>
+                                                    <span class="btn-danger">Kích cỡ hình chuẩn: 1440 x 750 px</span>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="title">Title</label>
@@ -82,12 +82,12 @@
                                                     <input type="text" class="form-control" id="subtitle" name="description" value="{{$feature->description}}" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <button type="submit" class="btn btn-lg btn-success" >Update</button>
+                                                    <button type="submit" class="btn btn-lg btn-success" >Cập nhật</button>
                                                 </div>
                                             </form>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
                                         </div>
                                     </div>
 
@@ -107,7 +107,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">New Slide</h4>
+                    <h4 class="modal-title">Trình chiếu mới</h4>
                 </div>
                 <div class="modal-body">
                     <form role="form" method="POST" action="{{route('feature.store')}}" enctype="multipart/form-data">
@@ -115,26 +115,26 @@
                         <div class="form-group">
                         <span class="btn green fileinput-button">
                                                 <i class="fa fa-plus"></i>
-                                                <span> Upload Image </span>
+                                                <span> Tải lên hình ảnh </span>
                                                 <input type="file" name="photo" class="form-control input-lg">
                                             </span>
-                            <span class="btn-danger">Standard Image Size: 1440 x 750 px</span>
+                            <span class="btn-danger">Kích cỡ hình chuẩn: 1440 x 750 px</span>
                         </div>
                         <div class="form-group">
-                            <label for="title">Title</label>
+                            <label for="title">Tiêu đề</label>
                             <input type="text" class="form-control" id="title" name="title" >
                         </div>
                         <div class="form-group">
-                            <label for="subtitle">Subtitle</label>
+                            <label for="subtitle">Phụ đề</label>
                             <input type="text" class="form-control" id="subtitle" name="description" >
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-lg btn-success" >Save</button>
+                            <button type="submit" class="btn btn-lg btn-success" >Lưu</button>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
                 </div>
             </div>
 

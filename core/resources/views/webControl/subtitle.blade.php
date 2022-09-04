@@ -28,37 +28,37 @@
                             <div class="col-md-10 col-md-offset-1">
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">About Sub Title</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Giới thiệu về Tiêu đề phụ</strong></label>
                                     <div class="col-md-12">
-                                        <textarea name="about_subtitle" class="form-control input-lg" rows="3" placeholder="About Sub Title" required>{{ $page->about_subtitle }}</textarea>
+                                        <textarea name="about_subtitle" class="form-control input-lg" rows="3" placeholder="Giới thiệu về Tiêu đề phụ" required>{{ $page->about_subtitle }}</textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Service Sub Title</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Tiêu đề dịch vụ phụ</strong></label>
                                     <div class="col-md-12">
-                                        <textarea name="service_subtitle" class="form-control input-lg" rows="3" placeholder="Service Sub Title" required>{{ $page->service_subtitle }}</textarea>
+                                        <textarea name="service_subtitle" class="form-control input-lg" rows="3" placeholder="Tiêu đề dịch vụ phụ" required>{{ $page->service_subtitle }}</textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Plan Sub Title</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Tiêu đề phụ của kế hoạch</strong></label>
                                     <div class="col-md-12">
-                                        <textarea name="plan_subtitle" class="form-control input-lg" rows="3" placeholder="Plan Sub Title" required>{{ $page->plan_subtitle }}</textarea>
+                                        <textarea name="plan_subtitle" class="form-control input-lg" rows="3" placeholder="Tiêu đề phụ của kế hoạch" required>{{ $page->plan_subtitle }}</textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Investor Sub Title</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Chức danh phụ của nhà đầu tư</strong></label>
                                     <div class="col-md-12">
-                                        <textarea name="investor_subtitle" class="form-control input-lg" rows="3" placeholder="Investor Sub Title" required>{{ $page->investor_subtitle }}</textarea>
+                                        <textarea name="investor_subtitle" class="form-control input-lg" rows="3" placeholder="Chức danh phụ của nhà đầu tư" required>{{ $page->investor_subtitle }}</textarea>
                                     </div>
                                 </div>
 
 
                                 <div class="form-group">
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn blue btn-block bold btn-lg uppercase"><i class="fa fa-send"></i> Update</button>
+                                        <button type="submit" class="btn blue btn-block bold btn-lg uppercase"><i class="fa fa-send"></i> Cập nhật</button>
                                     </div>
                                 </div>
                             </div>

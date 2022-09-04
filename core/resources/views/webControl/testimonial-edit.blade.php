@@ -28,19 +28,19 @@
                             <div class="col-md-8 col-md-offset-2">
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Author Name</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Tên tác giả</strong></label>
                                     <div class="col-md-12">
                                         <input name="name" class="form-control input-lg" value="{{ $testimonial->name }}" placeholder="Author Name" required/>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Author Details</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Thông tin chi tiết về tác giả</strong></label>
                                     <div class="col-md-12">
-                                        <input name="position" class="form-control input-lg" value="{{ $testimonial->position }}" placeholder="Author Details" required/>
+                                        <input name="position" class="form-control input-lg" value="{{ $testimonial->position }}" placeholder="Thông tin chi tiết về tác giả" required/>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Author Image</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Hình ảnh tác giả</strong></label>
                                     <div class="col-md-12">
                                         <div class="fileinput fileinput-new" data-provides="fileinput">
                                             <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;" data-trigger="fileinput">
@@ -49,25 +49,25 @@
                                             <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px"></div>
                                             <div>
                                                 <span class="btn btn-info btn-file">
-                                                    <span class="fileinput-new bold uppercase"><i class="fa fa-file-image-o"></i> Select image</span>
-                                                    <span class="fileinput-exists bold uppercase"><i class="fa fa-edit"></i> Change</span>
+                                                    <span class="fileinput-new bold uppercase"><i class="fa fa-file-image-o"></i> Chọn ảnh</span>
+                                                    <span class="fileinput-exists bold uppercase"><i class="fa fa-edit"></i> Thay đổi</span>
                                                     <input type="file" name="image" accept="image/*">
                                                 </span>
-                                                <a href="#" class="btn btn-danger fileinput-exists bold uppercase" data-dismiss="fileinput"><i class="fa fa-trash"></i> Remove</a>
+                                                <a href="#" class="btn btn-danger fileinput-exists bold uppercase" data-dismiss="fileinput"><i class="fa fa-trash"></i> Xóa</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Testimonial Message</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Tin nhắn chứng thực</strong></label>
                                     <div class="col-md-12">
-                                        <textarea name="message" id="area1" rows="5" class="form-control" required placeholder="Testimonial Message">{{ $testimonial->message }}</textarea>
+                                        <textarea name="message" id="area1" rows="5" class="form-control" required placeholder="Tin nhắn chứng thực">{{ $testimonial->message }}</textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="col-md-12">
-                                        <button type="submit" onclick="nicEditors.findEditor('area1').saveContent();" class="btn blue btn-block bold btn-lg uppercase"><i class="fa fa-send"></i> Update Testimonial</button>
+                                        <button type="submit" onclick="nicEditors.findEditor('area1').saveContent();" class="btn blue btn-block bold btn-lg uppercase"><i class="fa fa-send"></i> Cập nhật lời chứng thực</button>
                                     </div>
                                 </div>
                             </div>

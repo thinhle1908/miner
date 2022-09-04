@@ -29,7 +29,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Terms Of Use</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Điều khoản sử dụng</strong></label>
                                     <div class="col-md-12">
                                         <textarea name="tou" class="form-control">{!! $basic->tou !!}</textarea>
                                     </div>
@@ -40,7 +40,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Privacy Policy</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Chính sách bảo mật</strong></label>
                                     <div class="col-md-12">
                                         <textarea name="pp" class="form-control">{!! $basic->pp !!}</textarea>
                                     </div>
@@ -50,7 +50,7 @@
                         <br> <br>
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3">
-                                <button type="submit" class="btn blue btn-block btn-lg">UPDATE</button>
+                                <button type="submit" class="btn blue btn-block btn-lg">CẬP NHẬT</button>
                             </div>
                         </div>
                         <br>

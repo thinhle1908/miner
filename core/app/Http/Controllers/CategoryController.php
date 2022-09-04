@@ -17,7 +17,7 @@ class CategoryController extends Controller
 
     {
 
-        $page_title = 'All Miner';
+        $page_title = 'Tất Cả Loại Tiền';
         $categories = Category::all();
         return view('dashboard.category', compact('page_title','categories'));
 

@@ -14,7 +14,7 @@
             <div class="portlet box blue">
                 <div class="portlet-title">
                     <div class="caption">
-                        <strong><i class="fa fa-envelope"></i> Send Mail to - {{ $user->name }}</strong>
+                        <strong><i class="fa fa-envelope"></i> Gửi thư đến - {{ $user->name }}</strong>
                     </div>
                     <div class="tools">
                         <a href="javascript:;" class="collapse"> </a>
@@ -34,7 +34,7 @@
 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong>SUBJECT</strong></label>
+                                    <label class="col-md-12"><strong>Chủ Ngữ</strong></label>
                                     <div class="col-md-12">
                                         <input class="form-control input-lg" name="subject" placeholder="Email Subject"  type="text" required="">
                                     </div>
@@ -48,7 +48,7 @@
                         <div class="row uppercase">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong>Message</strong> NB: EMAIL WILL SENT USING EMAIL TEMPLATE</label>
+                                    <label class="col-md-12"><strong>Thông điệp</strong> NB: EMAIL SẼ GỬI MẪU EMAIL ĐANG SỬ DỤNG</label>
                                     <div class="col-md-12">
                                         <textarea name="message" rows="10" class="form-control" id="area1"></textarea>
                                     </div>
@@ -60,7 +60,7 @@
                         <div class="row uppercase">
                             <div class="col-md-12">
 
-                                <button type="submit" class="btn btn-success btn-lg btn-block"> <i class="fa fa-send"></i> Send Mail</button>
+                                <button type="submit" class="btn btn-success btn-lg btn-block"> <i class="fa fa-send"></i> Gửi thư</button>
 
                             </div>
                         </div><!-- row -->

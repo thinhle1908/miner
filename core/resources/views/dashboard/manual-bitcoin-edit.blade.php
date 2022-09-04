@@ -33,7 +33,7 @@
 
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label class="col-md-12"><strong style="text-transform: uppercase;">Method Name</strong></label>
+                                        <label class="col-md-12"><strong style="text-transform: uppercase;">Tên phương pháp</strong></label>
                                         <div class="col-sm-12">
                                             <div class="input-group mb15">
                                                 <input class="form-control input-lg bold" name="name" value="{{ $btc->name }}" required type="text" placeholder="Method Name">
@@ -47,11 +47,11 @@
 
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label class="col-md-12"><strong style="text-transform: uppercase;">Change Photo</strong></label>
+                                        <label class="col-md-12"><strong style="text-transform: uppercase;">Thay đổi ảnh</strong></label>
                                         <div class="col-sm-12">
                                             <span class="btn green fileinput-button">
                                                 <i class="fa fa-plus"></i>
-                                                <span> Upload New Photo </span>
+                                                <span> Tải lên ảnh mới </span>
                                                 <input class="form-control input-lg bold" name="image" value="" type="file" >
                                             </span>
                                         </div>
@@ -61,7 +61,7 @@
 
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label class="col-md-12"><strong style="text-transform: uppercase;">Method Currency</strong></label>
+                                        <label class="col-md-12"><strong style="text-transform: uppercase;">Phương thức tiền tệ</strong></label>
                                         <div class="col-sm-12">
                                             <div class="input-group mb15">
                                                 <input class="form-control input-lg bold" name="currency" value="{{ $btc->currency }}" required type="text" placeholder="Currency">
@@ -75,7 +75,7 @@
 
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label class="col-md-12"><strong style="text-transform: uppercase;">Currency Rate</strong></label>
+                                        <label class="col-md-12"><strong style="text-transform: uppercase;">Tỷ giá tiền tệ</strong></label>
                                         <div class="col-sm-12">
                                             <div class="input-group mb15">
                                                 <span class="input-group-addon"><strong>1 {{ $basic->currency }} = </strong></span>
@@ -92,12 +92,11 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label class="col-md-12"><strong style="text-transform: uppercase;">Payment
-                                                    Details</strong></label>
+                                            <label class="col-md-12"><strong style="text-transform: uppercase;">Chi tiết thanh toán</strong></label>
                                             <div class="col-sm-12">
                                         <textarea name="val1" rows="8"
                                                   class="form-control bold input-lg" required
-                                                  placeholder="Payment Details ( Where User Pay You )">{{ $btc->val1 }}</textarea>
+                                                  placeholder="Chi tiết thanh toán ( Nơi người dùng trả tiền cho bạn)">{{ $btc->val1 }}</textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -107,12 +106,11 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label class="col-md-12"><strong style="text-transform: uppercase;">Fix
-                                                    Charge </strong></label>
+                                            <label class="col-md-12"><strong style="text-transform: uppercase;">Khắc phục phí </strong></label>
                                             <div class="col-sm-12">
                                                 <div class="input-group mb15">
                                                     <input class="form-control input-lg bold" name="fix" value="{{ $btc->fix }}"
-                                                           required type="text" placeholder="Fix Charge">
+                                                           required type="text" placeholder="Khắc phục phí">
                                                     <span class="input-group-addon"><strong>{{ $basic->currency }}</strong></span>
                                                 </div>
                                             </div>
@@ -120,11 +118,11 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label class="col-md-12"><strong style="text-transform: uppercase;">Percentage </strong></label>
+                                            <label class="col-md-12"><strong style="text-transform: uppercase;">Phần trăm </strong></label>
                                             <div class="col-sm-12">
                                                 <div class="input-group mb15">
                                                     <input class="form-control input-lg bold" name="percent" value="{{ $btc->percent }}"
-                                                           required type="text" placeholder="Percentage">
+                                                           required type="text" placeholder="Phần trăm">
                                                     <span class="input-group-addon"><i class="fa fa-percent"></i></span>
                                                 </div>
                                             </div>
@@ -135,7 +133,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label class="col-md-12"><strong
-                                                        style="text-transform: uppercase;">Status </strong></label>
+                                                        style="text-transform: uppercase;">Trạng thái </strong></label>
                                             <div class="col-sm-12">
                                                 <input data-toggle="toggle" {{ $btc->status == 1 ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-width="100%" data-size="large" type="checkbox" name="status">
                                             </div>
@@ -147,7 +145,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <button class="btn btn-primary btn-block btn-lg"><i class="fa fa-send"></i> Update Manual Method</button>
+                                <button class="btn btn-primary btn-block btn-lg"><i class="fa fa-send"></i> Cập nhật phương pháp thủ công</button>
                             </div>
                         </div>
                     </div>

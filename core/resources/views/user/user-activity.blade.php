@@ -157,7 +157,7 @@
                                 </div>
                             </div>
                     @else
-                        <h1 class="text-center text-danger">You Haven't Any Transaction Log. </h1>
+                        <h1 class="text-center text-danger">Bạn không có bất kỳ nhật ký giao dịch nào. </h1>
                     @endif
 
                 </div>

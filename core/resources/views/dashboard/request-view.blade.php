@@ -20,24 +20,24 @@
                     <div class="row">
                     <div class="col-md-12">
                         <div class="text-center bold">
-                            <h3>Transaction ID : #{{ $deposit->transaction_id }}</h3>
-                            <h3>Deposit Method : {{ $deposit->bank->name }}</h3>
+                            <h3>ID giao dịch : #{{ $deposit->transaction_id }}</h3>
+                            <h3>Phương thức gửi tiền : {{ $deposit->bank->name }}</h3>
                             @if($deposit->bank->id == 5)
-                                <h3>Send Amount : {{ round($deposit->net_amount / $deposit->bank->rate, $basic->deci) }} - {{ $deposit->bank->currency }}</h3>
+                                <h3>Gửi số tiền : {{ round($deposit->net_amount / $deposit->bank->rate, $basic->deci) }} - {{ $deposit->bank->currency }}</h3>
                             @else
-                                <h3>Send Amount : {{ $deposit->net_amount * $deposit->bank->rate }} - {{ $deposit->bank->currency }}</h3>
+                                <h3>Gửi số tiền: {{ $deposit->net_amount * $deposit->bank->rate }} - {{ $deposit->bank->currency }}</h3>
                             @endif
-                            <h3>Deposit Amount : {{ $deposit->amount }} - {{ $basic->currency }}</h3>
-							<h3>Depositor : <a href="{{ route('user-details',$deposit->user_id) }}" class="btn btn-primary"><i class="fa fa-user"></i> {{ $deposit->member->username }}</a></h3>
+                            <h3>Số tiền đặt cọc: {{ $deposit->amount }} - {{ $basic->currency }}</h3>
+							<h3>Người gửi tiền: <a href="{{ route('user-details',$deposit->user_id) }}" class="btn btn-primary"><i class="fa fa-user"></i> {{ $deposit->member->username }}</a></h3>
 							<hr>
 							<h3>Status : 
 
 									@if($deposit->status == 1)
-                                        <span class="label label-primary bold uppercase"><i class="fa fa-check"></i> Approved</span>
+                                        <span class="label label-primary bold uppercase"><i class="fa fa-check"></i> Đã được phê duyệt</span>
                                     @elseif($deposit->status == 2)
-                                            <span class="label label-danger bold uppercase"><i class="fa fa-times"></i> Cancel</span>
+                                            <span class="label label-danger bold uppercase"><i class="fa fa-times"></i> Hủy bỏ</span>
                                      @elseif($deposit->status == 0)
-                                            <span class="label label-warning bold uppercase"><i class="fa fa-spinner"></i> Pending</span>
+                                            <span class="label label-warning bold uppercase"><i class="fa fa-spinner"></i> Chưa giải quyết</span>
                                     @endif
 							</h3>
                             <hr>
@@ -46,14 +46,14 @@
                                 <button type="button" class="btn btn-success bold uppercase btn-block delete_button"
                                         data-toggle="modal" data-target="#DelModal"
                                         data-id="{{ $deposit->id }}">
-                                    <i class='fa fa-check'></i> Approve Payment
+                                    <i class='fa fa-check'></i> Phê duyệt thanh toán
                                 </button>
                             </div>
                             <div class="col-md-3">
                                 <button type="button" class="btn btn-danger bold uppercase btn-block cancel_button"
                                         data-toggle="modal" data-target="#cancelModal"
                                         data-id="{{ $deposit->id }}">
-                                    <i class='fa fa-times'></i> Cancel Payment
+                                    <i class='fa fa-times'></i> Hủy thanh toán
                                 </button>
                             </div>
                             @endif
@@ -63,7 +63,7 @@
                     <hr>
                     <div class="row">
                         <div class="col-md-12">
-                            <h3>Message : </h3><br>
+                            <h3>Thông điệp : </h3><br>
                             {!! $deposit->message !!}
                         </div>
                     </div>
@@ -90,11 +90,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title bold uppercase" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i> <strong>Confirmation..!</strong></h4>
+                    <h4 class="modal-title bold uppercase" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i> <strong>Xác nhận ..!</strong></h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure you Want to Approve This Deposit Request..?</strong>
+                    <strong>Bạn có chắc chắn Muốn Phê duyệt Yêu cầu Gửi tiền này ..?</strong>
                 </div>
 
                 <div class="modal-footer">
@@ -102,8 +102,8 @@
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" class="abir_id" value="0">
 
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Yes. I am Sure.</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Đóng</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Đúng. Tôi chắc chắn.</button>
                     </form>
                 </div>
 
@@ -116,11 +116,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title  bold uppercase" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i> <strong>Confirmation..!</strong></h4>
+                    <h4 class="modal-title  bold uppercase" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i> <strong>Xác nhận ..!</strong></h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure you Want to Cancel This Deposit Request..?</strong>
+                    <strong>Bạn có chắc chắn muốn Hủy Yêu cầu Gửi tiền này ..?</strong>
                 </div>
 
                 <div class="modal-footer">
@@ -128,8 +128,8 @@
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" class="abir_id" value="0">
 
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Yes. I am Sure.</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Đóng</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Đúng. Tôi chắc chắn.</button>
                     </form>
                 </div>
 

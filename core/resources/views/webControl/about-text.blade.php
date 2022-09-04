@@ -28,16 +28,16 @@
                             <div class="col-md-10 col-md-offset-1">
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Video URL</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">URL video</strong></label>
                                     <div class="col-md-12">
                                         <input type="text" class="form-control input-lg" value="{{$page->about_leftText}}" name="about_leftText" >
 
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">About Right Text</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Giới thiệu về văn bản bên phải</strong></label>
                                     <div class="col-md-12">
-                                        <textarea name="about_rightText" id="area2" rows="10" class="form-control" required placeholder="About Right Text">{{ $page->about_rightText }}</textarea>
+                                        <textarea name="about_rightText" id="area2" rows="10" class="form-control" required placeholder="Giới thiệu về văn bản bên phải">{{ $page->about_rightText }}</textarea>
                                     </div>
                                 </div>
 

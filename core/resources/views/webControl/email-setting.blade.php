@@ -28,7 +28,7 @@
                     <div class="portlet box green">
                         <div class="portlet-title">
                             <div class="caption">
-                                <i class="fa fa-bookmark"></i>Short Code</div>
+                                <i class="fa fa-bookmark"></i>Mã ngắn</div>
 
                         </div>
                         <div class="portlet-body">
@@ -37,8 +37,8 @@
                                     <thead>
                                     <tr>
                                         <th> # </th>
-                                        <th> CODE </th>
-                                        <th> DESCRIPTION </th>
+                                        <th> MÃ SỐ </th>
+                                        <th> MÔ TẢ </th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -47,13 +47,13 @@
                                     <tr>
                                         <td> 1 </td>
                                         <td> <pre>@{{message}}</pre> </td>
-                                        <td> Details Text From Script</td>
+                                        <td>Chi tiết Văn bản Từ Tập lệnh</td>
                                     </tr>
 
                                     <tr>
                                         <td> 2 </td>
                                         <td> <pre>@{{name}}</pre> </td>
-                                        <td> Users Name. Will Pull From Database and Use in EMAIL text</td>
+                                        <td>Tên người dùng. Sẽ lấy từ cơ sở dữ liệu và sử dụng trong văn bản EMAIL</td>
                                     </tr>
 
                                     </tbody>
@@ -69,7 +69,7 @@
                     <div class="portlet box green">
                         <div class="portlet-title">
                             <div class="caption">
-                                <i class="fa fa-info-circle"></i>Email Details</div>
+                                <i class="fa fa-info-circle"></i>Chi tiết Email</div>
 
                         </div>
                         <div class="portlet-body">
@@ -79,14 +79,14 @@
                                 <div class="form-body">
 
                                     <div class="form-group">
-                                        <label class="control-label"><strong style="text-transform: uppercase;margin-left: 15px;">Email Sent From</strong><br></label>
+                                        <label class="control-label"><strong style="text-transform: uppercase;margin-left: 15px;">Email được gửi từ</strong><br></label>
                                         <div class="col-md-12">
                                             <input class="form-control input-lg" name="from_email" value="{{ $basic->from_email }}" required type="text">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label"><strong style="text-transform: uppercase;margin-left: 15px;">Email Template</strong><br></label>
+                                        <label class="control-label"><strong style="text-transform: uppercase;margin-left: 15px;">Mẫu email</strong><br></label>
                                         <div class="col-md-12">
                                             <textarea id="area1" class="form-control" rows="30" name="email_body">{{ $basic->email_body }}</textarea>
                                         </div>
@@ -95,7 +95,7 @@
                                     <br>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-send"></i> UPDATE</button>
+                                            <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-send"></i> CẬP NHẬT</button>
                                         </div>
                                     </div>
                                 </div>

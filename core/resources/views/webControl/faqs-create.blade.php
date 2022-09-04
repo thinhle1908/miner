@@ -28,16 +28,16 @@
                             <div class="col-md-10 col-md-offset-1">
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Question Title</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Tiêu đề Câu hỏi</strong></label>
                                     <div class="col-md-12">
-                                        <input name="title" class="form-control input-lg" placeholder="Question Title" required/>
+                                        <input name="title" class="form-control input-lg" placeholder="Tiêu đề Câu hỏi" required/>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Question Answer</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Trả lời câu hỏi</strong></label>
                                     <div class="col-md-12">
-                                        <textarea name="description" id="area1" rows="10" class="form-control" required placeholder="Question Answer"></textarea>
+                                        <textarea name="description" id="area1" rows="10" class="form-control" required placeholder="Trả lời câu hỏi"></textarea>
                                     </div>
                                 </div>
 

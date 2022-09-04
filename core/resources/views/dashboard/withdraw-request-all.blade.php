@@ -17,14 +17,14 @@
 
                         <thead>
                         <tr>
-                            <th>Date</th>
+                            <th>Ngày</th>
                             <th>Trx ID</th>
-                            <th>User</th>
-                            <th>Type</th>
-                            <th>Coin / Method</th>
-                            <th>Amount</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                            <th>Tài Khoản</th>
+                            <th>Loại</th>
+                            <th>Đồng Tiền / Phương Pháp</th>
+                            <th>Số Lượng</th>
+                            <th>Trạng Thái</th>
+                            <th>Hoạt Động</th>
                         </tr>
                         </thead>
 
@@ -54,18 +54,18 @@
                                 <td>{{ $p->amount }} - {{ $currency }}</td>
                                 <td>
                                     @if($p->status == 0 )
-                                        <span class="label label-warning bold uppercase"><i class="fa fa-spinner"></i> Pending</span>
+                                        <span class="label label-warning bold uppercase"><i class="fa fa-spinner"></i> Chưa Giải Quyết</span>
                                     @elseif($p->status == 1)
-                                        <span class="label label-success bold uppercase"><i class="fa fa-check"></i> Complete</span>
+                                        <span class="label label-success bold uppercase"><i class="fa fa-check"></i> Hoàn Thành</span>
                                     @elseif($p->status == 2)
-                                        <span class="label label-danger bold uppercase"><i class="fa fa-times"></i> Refund</span>
+                                        <span class="label label-danger bold uppercase"><i class="fa fa-times"></i> Hoàn Tiền</span>
                                     @endif
                                 </td>
                                 <td>
-                                    <a href="{{ route('single-withdraw-view',$p->id) }}" class="btn btn-primary btn-xs bold uppercase">View</a>
+                                    <a href="{{ route('single-withdraw-view',$p->id) }}" class="btn btn-primary btn-xs bold uppercase">Xem</a>
                                     @if($p->status == 0)
-                                        <a href="#" data-id="{{ $p->id }}" class="btn btn-success btn-xs bold uppercase confir">Confirm</a>
-                                        <a href="#" data-id="{{ $p->id }}" class="btn btn-danger btn-xs bold uppercase refund">Refund</a>
+                                        <a href="#" data-id="{{ $p->id }}" class="btn btn-success btn-xs bold uppercase confir">Xác nhận</a>
+                                        <a href="#" data-id="{{ $p->id }}" class="btn btn-danger btn-xs bold uppercase refund">Hoàn Tiền</a>
                                     @endif
                                 </td>
                             </tr>
@@ -84,18 +84,18 @@
 
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"><strong>Confirmation..!</strong> </h4>
+                    <h4 class="modal-title" id="myModalLabel"><strong>Xác Nhận..!</strong> </h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure to Confirm This Withdraw..?</strong>
+                    <strong>Bạn có chắc chắn xác nhận việc rút tiền này không ..?</strong>
                 </div>
                 <div class="modal-footer">
                     <form method="post" action="{{ route('withdraw-confirm') }}" class="form-inline">
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" class="abir_id" value="0">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                        <button type="submit" class="btn btn-success"> Yes I'm Sure..!</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"> Đóng</button>
+                        <button type="submit" class="btn btn-success"> Vâng tôi chắc chắn..!</button>
                     </form>
                 </div>
 
@@ -108,18 +108,18 @@
 
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i><strong>Confirmation..!</strong> </h4>
+                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i><strong>Xác nhận ..!</strong> </h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure you want to Refund This Withdraw..?</strong>
+                    <strong>Bạn có chắc chắn muốn Hoàn trả Khoản Rút tiền này ..?</strong>
                 </div>
                 <div class="modal-footer">
                     <form method="post" action="{{ route('withdraw-refund') }}" class="form-inline">
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" class="abir_id" value="0">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Yes I'm Sure..!</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Đóng</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Vâng tôi chắc chắn..!</button>
                     </form>
                 </div>
 

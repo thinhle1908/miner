@@ -22,9 +22,9 @@
                         <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Title</th>
-                            <th>Icon</th>
-                            <th>Actions</th>
+                            <th>Tiêu đề</th>
+                            <th>Biểu tượng</th>
+                            <th>Hành động</th>
                         </tr>
                         </thead>
                         <tbody id="products-list" name="products-list">
@@ -34,8 +34,8 @@
                                 <td>{{$product->title}}</td>
                                 <td style="font-size: 22px;">{!! $product->code !!}</td>
                                 <td>
-                                    <button class="btn btn-primary btn-detail open_modal bold uppercase" value="{{$product->id}}"><i class="fa fa-edit"></i> EDIT</button>
-                                    <button type="button" class="btn btn-danger bold uppercase delete_button" data-toggle="modal" data-target="#DelModal" data-id="{{$product->id}}"> <i class='fa fa-trash'></i> DELETE</button>
+                                    <button class="btn btn-primary btn-detail open_modal bold uppercase" value="{{$product->id}}"><i class="fa fa-edit"></i> CHỈNH SỬA</button>
+                                    <button type="button" class="btn btn-danger bold uppercase delete_button" data-toggle="modal" data-target="#DelModal" data-id="{{$product->id}}"> <i class='fa fa-trash'></i> XÓA BỎ</button>
                                 </td>
                             </tr>
                         @endforeach
@@ -51,18 +51,18 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title bold uppercase" id="myModalLabel"><i class="fa fa-th"></i> Manage Service</h4>
+                    <h4 class="modal-title bold uppercase" id="myModalLabel"><i class="fa fa-th"></i> Quản lý dịch vụ</h4>
                 </div>
                 <div class="modal-body">
                     <form id="frmProducts" name="frmProducts" class="form-horizontal" novalidate="">
                         <div class="form-group error">
-                            <label for="inputName" class="col-sm-3 control-label bold uppercase">Title : </label>
+                            <label for="inputName" class="col-sm-3 control-label bold uppercase">Tiêu đề : </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control has-error bold " id="title" name="title" placeholder="Service Name" value="">
                             </div>
                         </div>
                         <div class="form-group error">
-                            <label for="inputName" class="col-sm-3 control-label bold uppercase">Icon Code : </label>
+                            <label for="inputName" class="col-sm-3 control-label bold uppercase">Mã biểu tượng : </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control has-error bold " id="code" name="code" placeholder="Social Fontawesome Code" value="">
                                 <code>For Fontawesome code visit : http://fontawesome.io/icons/</code>
@@ -72,7 +72,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary bold uppercase" id="btn-save" value="add"><i class="fa fa-send"></i> Save Service</button>
+                    <button type="button" class="btn btn-primary bold uppercase" id="btn-save" value="add"><i class="fa fa-send"></i> Lưu dịch vụ</button>
                     <input type="hidden" id="product_id" name="product_id" value="0">
                 </div>
             </div>
@@ -85,18 +85,18 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-trash'></i> Delete !</h4>
+                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-trash'></i> Xóa bỏ !</h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure you want to Delete ?</strong>
+                    <strong>Bạn có chắc chắn muốn xóa ?</strong>
                 </div>
 
                 <div class="modal-footer">
                     <form method="post" class="form-inline">
                         <input type="hidden" name="delete_id" id="delete_id" class="delete_id" value="0">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        <button type="button" class="btn btn-danger deleteButton"><i class="fa fa-trash"></i> DELETE</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Đóng</button>
+                        <button type="button" class="btn btn-danger deleteButton"><i class="fa fa-trash"></i> Xóa</button>
                     </form>
                 </div>
 

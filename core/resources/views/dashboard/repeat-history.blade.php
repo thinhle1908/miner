@@ -18,14 +18,14 @@
                         <thead>
                         <tr>
                             <th>ID#</th>
-                            <th>Repeat Date Time</th>
-                            <th>Transaction ID</th>
+                            <th>Lặp lại ngày giờ</th>
+                            <th>ID giao dịch</th>
                             {{--<th>User Name</th>--}}
                             {{--<th>User Email</th>--}}
-                            <th>Investment Plan</th>
-                            <th>Investment Amount</th>
-                            <th>Repeat Amount</th>
-                            <th>Repeat Percentage</th>
+                            <th>Kế hoạch đầu tư</th>
+                            <th>Số tiền đầu tư</th>
+                            <th>Số tiền lặp lại</th>
+                            <th>Phần trăm lặp lại</th>
                         </tr>
                         </thead>
 

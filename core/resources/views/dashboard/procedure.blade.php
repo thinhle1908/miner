@@ -23,9 +23,9 @@
                         <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Step Title</th>
+                            <th>Tiêu đề bước</th>
                             <th>Image</th>
-                            <th>Action</th>
+                            <th>Hoạt động</th>
                         </tr>
                         </thead>
                         <tbody id="products-list" name="products-list">

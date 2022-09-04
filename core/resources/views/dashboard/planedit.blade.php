@@ -27,13 +27,13 @@
                             
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Plan Title</label>
+                                        <label class="col-md-12 bold uppercase">Tiêu đề kế hoạch</label>
                                         <div class="col-md-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <i class="fa fa-font"></i>
                                                 </span>
-                                                <input type="text" class="form-control" placeholder="Plan Title" name="title"
+                                                <input type="text" class="form-control" placeholder="Tiêu đề kế hoạch" name="title"
                                                        value="{{ $plan->title }}">
                                             </div>
                                         </div>
@@ -42,10 +42,10 @@
                             
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Price</label>
+                                        <label class="col-md-12 bold uppercase">Giá bán</label>
                                         <div class="col-md-12">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Price" name="price" value="{{ $plan->price }}">
+                                                <input type="text" class="form-control" placeholder="Giá bán" name="price" value="{{ $plan->price }}">
                                                 <span class="input-group-addon">
                                                     {{ $basic->currency }}
                                                 </span>
@@ -56,13 +56,13 @@
                             
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Speed</label>
+                                        <label class="col-md-12 bold uppercase">Tốc độ</label>
                                         <div class="col-md-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <i class="fa fa-space-shuttle"></i>
                                                 </span>
-                                                <input type="text" class="form-control" placeholder="Speed" name="speed" value="{{ $plan->speed }}">
+                                                <input type="text" class="form-control" placeholder="Tốc độ" name="speed" value="{{ $plan->speed }}">
                                             </div>
                                         </div>
                                     </div>
@@ -75,7 +75,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Miner</label>
+                                        <label class="col-md-12 bold uppercase">Đồng tiền</label>
                                         <div class="col-md-12">
                                             <select name="category_id" id="category_id" class="form-control">
                                                 @if($categories)
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Description</label>
+                                        <label class="col-md-12 bold uppercase">Mô Tả</label>
                                         <div class="col-md-12">
                                             <input name="description" id="description" class="form-control" value="{{ $plan->description }}">
                                         </div>
@@ -101,7 +101,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">PLAN STATUS</label>
+                                        <label class="col-md-12 bold uppercase">TRẠNG THÁI KẾ HOẠCH</label>
                                         <div class="col-md-12">
                                             <input data-toggle="toggle" {{ $plan->status == 1 ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-on="Active" data-off="Deactive" data-width="100%" type="checkbox" name="status">
                                         </div>
@@ -113,15 +113,15 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Period</label>
+                                        <label class="col-md-12 bold uppercase">Giai đoạn</label>
                                         <div class="col-md-12">
                                             <div class="input-group">
                                                 <input type="number" class="form-control" value="{{ $plan->period }}" placeholder="Period" id="period" name="period">
                                                 <span class="input-group-addon">
                                                     <select name="ptyp" id="ptyp">
-                                                        <option value="day" {{ ($plan->ptyp == 'day')?'selected':'' }}>Day</option>
-                                                        <option value="month" {{ ($plan->ptyp == 'month')?'selected':'' }}>Month</option>
-                                                        <option value="year" {{ ($plan->ptyp == 'year')?'selected':'' }}>Year</option>
+                                                        <option value="day" {{ ($plan->ptyp == 'day')?'selected':'' }}>Ngày</option>
+                                                        <option value="month" {{ ($plan->ptyp == 'month')?'selected':'' }}>Tháng</option>
+                                                        <option value="year" {{ ($plan->ptyp == 'year')?'selected':'' }}>Năm</option>
                                                     </select>
                                                 </span>
                                             </div>
@@ -131,10 +131,10 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="col-md-12 bold uppercase">Return Per Day</label>
+                                        <label class="col-md-12 bold uppercase">Trở lại mỗi ngày</label>
                                         <div class="col-md-12">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Return Per Day" name="return" value="{{ $plan->return }}">
+                                                <input type="text" class="form-control" placeholder="Trở lại mỗi ngày" name="return" value="{{ $plan->return }}">
                                                 <span class="input-group-addon" id="coin_code">
                                                     {{ $plan->category->code }}
                                                 </span>
@@ -153,7 +153,7 @@
 
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label class="col-md-12 bold uppercase">Feature <ins class="ind">{{ $i }}</ins></label>
+                                                    <label class="col-md-12 bold uppercase">Tính năng <ins class="ind">{{ $i }}</ins></label>
                                                     <div class="col-md-12">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control" name="features[]" value="{{ $feature }}">
@@ -176,7 +176,7 @@
 
                             <div class="form-group">
                                 <div class="col-md-4 col-md-offset-8">
-                                    <button class="btn btn-success btn-block" id="additem">Add Feature</button>
+                                    <button class="btn btn-success btn-block" id="additem">Thêm Tính năng</button>
                                 </div>
                             </div>
 
@@ -186,7 +186,7 @@
                         <div class="form-actions">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn green btn-block">Submit</button>
+                                    <button type="submit" class="btn green btn-block">Gửi</button>
                                 </div>
                             </div>
                         </div>

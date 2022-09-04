@@ -9,7 +9,7 @@
             <div class="portlet box blue">
                 <div class="portlet-title">
                     <div class="caption">
-                        <button id="btn_add" name="btn_add" class="btn btn-primary pull-right bold"><i class="fa fa-plus"></i> Add New Compound</button>
+                        <button id="btn_add" name="btn_add" class="btn btn-primary pull-right bold"><i class="fa fa-plus"></i> Thêm hợp chất mới</button>
                     </div>
                     <div class="tools">
                         <a href="javascript:;" class="collapse"> </a>
@@ -22,9 +22,9 @@
                         <thead>
                         <tr>
                             <th>Sl No</th>
-                            <th>Compound Name</th>
-                            <th>Compound Value</th>
-                            <th>Action</th>
+                            <th>Tên hợp chất</th>
+                            <th>Giá trị tổng hợp</th>
+                            <th>Hoạt động</th>
                         </tr>
                         </thead>
                         <tbody id="products-list" name="products-list">
@@ -32,9 +32,9 @@
                             <tr id="product{{$product->id}}">
                                 <td>{{$product->id}}</td>
                                 <td>{{$product->name}}</td>
-                                <td>{{$product->compound}} - Hours</td>
+                                <td>{{$product->compound}} - Giờ</td>
                                 <td>
-                                    <button class="btn btn-primary btn-detail open_modal bold uppercase" value="{{$product->id}}"><i class="fa fa-edit"></i> EDIT</button>
+                                    <button class="btn btn-primary btn-detail open_modal bold uppercase" value="{{$product->id}}"><i class="fa fa-edit"></i> CHỈNH SỬA</button>
                                 </td>
                             </tr>
                         @endforeach
@@ -50,12 +50,12 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title bold uppercase" id="myModalLabel"><i class="fa fa-list"></i> Manage Compound</h4>
+                    <h4 class="modal-title bold uppercase" id="myModalLabel"><i class="fa fa-list"></i> Quản lý hợp chất</h4>
                 </div>
                 <div class="modal-body">
                     <form id="frmProducts" name="frmProducts" class="form-horizontal" novalidate="">
                         <div class="form-group error">
-                            <label for="inputName" class="col-sm-3 control-label bold uppercase">Name : </label>
+                            <label for="inputName" class="col-sm-3 control-label bold uppercase">Tên : </label>
                             <div class="col-sm-9">
                                 <div class="input-group">
                                     <input type="text" class="form-control has-error bold " id="name" name="name" placeholder="Compound Name " value="">
@@ -64,11 +64,11 @@
                             </div>
                         </div>
                         <div class="form-group error">
-                            <label for="inputName" class="col-sm-3 control-label bold uppercase">Value : </label>
+                            <label for="inputName" class="col-sm-3 control-label bold uppercase">Giá trị : </label>
                             <div class="col-sm-9">
                                 <div class="input-group">
-                                    <input type="number" class="form-control has-error bold " id="compound" name="compound" placeholder="Compound Value " value="">
-                                    <span class="input-group-addon bold">Hours.</span>
+                                    <input type="number" class="form-control has-error bold " id="compound" name="compound" placeholder="Giá trị Compound " value="">
+                                    <span class="input-group-addon bold">Giờ.</span>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary bold uppercase" id="btn-save" value="add"><i class="fa fa-send"></i> Save Compound</button>
+                    <button type="button" class="btn btn-primary bold uppercase" id="btn-save" value="add"><i class="fa fa-send"></i> Lưu Compound</button>
                     <input type="hidden" id="product_id" name="product_id" value="0">
                 </div>
             </div>

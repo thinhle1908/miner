@@ -15,7 +15,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="text-center bold">
-                                <h3>Transaction ID : #{{ $log->transaction_id }}</h3>
+                                <h3>ID giao dịch : #{{ $log->transaction_id }}</h3>
                                 <h3>
                                     @if($log->type == 'general')
                                         Method : {{ $log->method->name }}
@@ -29,19 +29,19 @@
                                             $currency = $wallet->miner->code;
                                             $details = 'Wallet Address : ' . $wallet->wallet;
                                         @endphp
-                                        Coin Type : {{ $wallet->miner->code }}
+                                        Loại tiền xu: {{ $wallet->miner->code }}
                                     @endif
                                 </h3>
-                                <h3>Withdraw Amount : {{ $log->amount}} - {{ $currency }}</h3>
+                                <h3>Rút tiền : {{ $log->amount}} - {{ $currency }}</h3>
                                 <h3>{{ $details }}</h3>
                                 <br>
-                                <h4>Status :
+                                <h4>Trạng thái :
                                     @if($log->status == 0 )
-                                        <span class="label label-warning bold uppercase"><i class="fa fa-spinner"></i> Pending</span>
+                                        <span class="label label-warning bold uppercase"><i class="fa fa-spinner"></i> Chưa giải quyết</span>
                                     @elseif($log->status == 1)
-                                        <span class="label label-success bold uppercase"><i class="fa fa-check"></i> Completed</span>
+                                        <span class="label label-success bold uppercase"><i class="fa fa-check"></i> Hoàn thành</span>
                                     @elseif($log->status == 2)
-                                        <span class="label label-danger bold uppercase"><i class="fa fa-times"></i> Refunded</span>
+                                        <span class="label label-danger bold uppercase"><i class="fa fa-times"></i> Đã hoàn lại</span>
                                     @endif
                                 </h4>
                                 @if($log->status ==0)
@@ -50,14 +50,14 @@
                                     <button type="button" class="btn btn-success bold uppercase btn-block delete_button"
                                             data-toggle="modal" data-target="#DelModal"
                                             data-id="{{ $log->id }}">
-                                        <i class='fa fa-check'></i> Approve Withdraw
+                                        <i class='fa fa-check'></i> Phê duyệt Rút tiền
                                     </button>
                                 </div>
                                 <div class="col-md-3">
                                     <button type="button" class="btn btn-danger bold uppercase btn-block refund_button"
                                             data-toggle="modal" data-target="#cancelModal"
                                             data-id="{{ $log->id }}">
-                                        <i class='fa fa-times'></i> Refund Payment
+                                        <i class='fa fa-times'></i> Trả lại tiền thừa
                                     </button>
                                 </div>
                                 @endif
@@ -67,7 +67,7 @@
                     <hr>
                     <div class="row">
                         <div class="col-md-12">
-                            <h3>Message : </h3><br>
+                            <h3>Thông điệp : </h3><br>
                             {!! $log->message !!}
                         </div>
                     </div>
@@ -82,18 +82,18 @@
 
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i><strong>Confirmation..!</strong> </h4>
+                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i><strong>Xác nhận ..!</strong> </h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure to Confirm This Withdraw..?</strong>
+                    <strong>Bạn có chắc chắn xác nhận việc rút tiền này không ..?</strong>
                 </div>
                 <div class="modal-footer">
                     <form method="post" action="{{ route('withdraw-confirm') }}" class="form-inline">
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" class="abir_id" value="0">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                        <button type="submit" class="btn btn-success"> Yes I'm Sure..!</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"> Đóng</button>
+                        <button type="submit" class="btn btn-success"> Vâng tôi chắc chắn..!</button>
                     </form>
                 </div>
 
@@ -106,18 +106,18 @@
 
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i><strong>Confirmation..!</strong> </h4>
+                    <h4 class="modal-title" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i><strong>Xác nhận ..!</strong> </h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure to Refund This Withdraw..?</strong>
+                    <strong>Bạn có chắc chắn Hoàn lại tiền khi Rút tiền này ..?</strong>
                 </div>
                 <div class="modal-footer">
                     <form method="post" action="{{ route('withdraw-refund') }}" class="form-inline">
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" class="abir_id" value="0">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-success"> Yes I'm Sure..!</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                        <button type="submit" class="btn btn-success"> Vâng tôi chắc chắn..!</button>
                     </form>
                 </div>
 

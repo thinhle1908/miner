@@ -25,11 +25,11 @@
                         <thead>
                         <tr>
                             <th>ID#</th>
-                            <th>Author Name</th>
-                            <th>Author Details</th>
-                            <th>Author Image</th>
-                            <th>Message</th>
-                            <th>Action</th>
+                            <th>Tên tác giả</th>
+                            <th>Thông tin chi tiết về tác giả</th>
+                            <th>Hình ảnh tác giả</th>
+                            <th>Thông điệp</th>
+                            <th>Hoạt động</th>
                         </tr>
                         </thead>
 
@@ -46,11 +46,11 @@
                                 </td>
                                 <td>{!! $p->message !!}</td>
                                 <td>
-                                    <a href="{{ route('testimonial-edit',$p->id) }}" class="btn btn-primary bold uppercase"><i class="fa fa-edit"></i> Edit </a>
+                                    <a href="{{ route('testimonial-edit',$p->id) }}" class="btn btn-primary bold uppercase"><i class="fa fa-edit"></i> Chỉnh Sửa </a>
                                     <button type="button" class="btn btn-danger bold uppercase delete_button"
                                             data-toggle="modal" data-target="#DelModal"
                                             data-id="{{ $p->id }}">
-                                        <i class='fa fa-trash'></i> Delete
+                                        <i class='fa fa-trash'></i> Xóa
                                     </button>
                                 </td>
                             </tr>
@@ -70,11 +70,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title bold" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i> Confirmation !</h4>
+                    <h4 class="modal-title bold" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i> Xác nhận !</h4>
                 </div>
 
                 <div class="modal-body">
-                    <strong>Are you sure you want to Delete ?</strong>
+                    <strong>Xác nhậnBạn có chắc chắn muốn Xóa không?</strong>
                 </div>
 
                 <div class="modal-footer">
@@ -82,8 +82,8 @@
                         {!! csrf_field() !!}
                         {{ method_field('DELETE') }}
                         <input type="hidden" name="id" class="abir_id" value="0">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> DELETE</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Đóng</button>
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> XÓA BỎ</button>
                     </form>
                 </div>
 

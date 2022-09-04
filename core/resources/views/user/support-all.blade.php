@@ -28,11 +28,11 @@
                             <thead>
                             <tr>
                                 <th>ID#</th>
-                                <th>Date</th>
-                                <th>Ticket Number</th>
-                                <th>Subject</th>
-                                <th>Status</th>
-                                <th>Action</th>
+                                <th>Ngày</th>
+                                <th>Số Vé</th>
+                                <th>Loại</th>
+                                <th>Trạng Thái</th>
+                                <th>Hoạt Động</th>
                             </tr>
                             </thead>
 
@@ -47,17 +47,17 @@
                                     <td>{{ $p->subject }}</td>
                                     <td>
                                         @if($p->status == 1)
-                                            <span class="label bold label-info"><i class="fa fa-eye"></i> Open</span>
+                                            <span class="label bold label-info"><i class="fa fa-eye"></i> Mở</span>
                                         @elseif($p->status == 2)
-                                            <span class="label bold label-success"><i class="fa fa-check"></i> Answer</span>
+                                            <span class="label bold label-success"><i class="fa fa-check"></i> Trả Lời</span>
                                         @elseif($p->status == 3)
-                                            <span class="label bold label-warning"><i class="fa fa-mail-reply"></i> Customer Reply</span>
+                                            <span class="label bold label-warning"><i class="fa fa-mail-reply"></i> Trả lời của khách hàng</span>
                                         @elseif($p->status == 9)
-                                            <span class="label bold label-danger"><i class="fa fa-times"></i> Close</span>
+                                            <span class="label bold label-danger"><i class="fa fa-times"></i> Đóng</span>
                                         @endif
                                     </td>
                                     <td>
-                                        <a href="{{ route('support-message',$p->ticket_number) }}" class="btn btn-primary"><i class="fa fa-eye"></i> View</a>
+                                        <a href="{{ route('support-message',$p->ticket_number) }}" class="btn btn-primary"><i class="fa fa-eye"></i> Xem</a>
                                     </td>
                                 </tr>
                             @endforeach

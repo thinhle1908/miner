@@ -10,7 +10,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="admin-header-text">
-                                <h3> Purchased Plan</h3>
+                                <h3> Gói đã mua</h3>
                             </div>
 
                         </div>
@@ -20,13 +20,13 @@
                                 <thead>
                                 <tr>
                                     <th>ID#</th>
-                                    <th>Purchase Date</th>
-                                    <th>Title</th>
-                                    <th>Price</th>
-                                    <th>Speed</th>
-                                    <th>Return Per Day</th>
-                                    <th>Miner</th>
-                                    <th>Status</th>
+                                    <th>Ngày mua</th>
+                                    <th>Tiêu đề</th>
+                                    <th>Giá bán</th>
+                                    <th>Tốc độ,</th>
+                                    <th>Trở lại mỗi ngày</th>
+                                    <th>Đồng tiền</th>
+                                    <th>Trạng thái</th>
                                 </tr>
                                 </thead>
 
@@ -44,13 +44,13 @@
                                         <td>{{ $log->plan->category->name }}</td>
                                         <td>
                                             @if($log->status == 0)
-                                                <button class="btn btn-warning">Pending</button>
+                                                <button class="btn btn-warning">Chưa giải quyết</button>
                                             @elseif($log->status == 2)
-                                                <button class="btn btn-danger">Refunded</button>
+                                                <button class="btn btn-danger">Đã hoàn lại</button>
                                             @elseif($log->status == 1)
-                                                <button class="btn btn-success">Activate</button>
+                                                <button class="btn btn-success">Hoạt động</button>
                                             @elseif($log->status == -10)
-                                                <button class="btn btn-danger">Expaired</button>
+                                                <button class="btn btn-danger">Hết hạn</button>
                                             @endif
                                         </td>
                                     </tr>

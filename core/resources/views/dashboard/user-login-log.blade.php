@@ -18,10 +18,10 @@
                         <thead>
                         <tr>
                             <th>ID#</th>
-                            <th>Date</th>
-                            <th>LogIn Ip</th>
-                            <th>Location</th>
-                            <th>Platform</th>
+                            <th>Ngày</th>
+                            <th>Đăng nhập Ip</th>
+                            <th>Địa điểm</th>
+                            <th>Nền tảng</th>
                         </tr>
                         </thead>
 

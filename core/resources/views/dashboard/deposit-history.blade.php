@@ -20,14 +20,14 @@
                             <thead>
                             <tr>
                                 <th>ID#</th>
-                                <th>Deposit Date</th>
-                                <th>Transaction ID</th>
-                                <th>Depositor User Name</th>
-                                <th>Deposit Method</th>
-                                <th>Send Amount</th>
-                                <th>Deposit Charge</th>
-                                <th>Deposit Balance</th>
-                                <th>Status</th>
+                                <th>Ngày Gửi Tiền</th>
+                                <th>ID Giao Dịch</th>
+                                <th>Tên Người Dùng Gửi Tiền</th>
+                                <th>Phương Thức Gửi Tiền</th>
+                                <th>Gửi Số Tiền</th>
+                                <th>Phí Đặt Cọc</th>
+                                <th>Khoản Đặt Cọc</th>
+                                <th>Trạng Thái</th>
                             </tr>
                             </thead>
 

@@ -20,10 +20,10 @@
                         <thead>
                         <tr>
                             <th> ID </th>
-                            <th> User </th>
-                            <th> Plan </th>
-                            <th> Active </th>
-                            <th> Refund </th>
+                            <th> Tài Khoản </th>
+                            <th> Kế Hoạch </th>
+                            <th> Trạng Thái </th>
+                            <th> Hoàn Tiền </th>
                         </tr>
                         </thead>
                         <tbody>
@@ -38,12 +38,12 @@
                                     <td> {{ $log->plan->title }} </td>
                                     <td>
                                         <a href="{{ route('approve-plan', $log->id) }}" class="btn btn-success" role="button">
-                                            Approve
+                                            Chấp thuận
                                         </a>
                                     </td>
                                     <td>
                                         <button class="btn btn-warning dltbtn" item="{{ $log->id }}" role="button">
-                                            Refund
+                                            Hoàn Tiền
                                         </button>
                                     </td>
                                 </tr>

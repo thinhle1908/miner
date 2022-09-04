@@ -30,15 +30,15 @@
                                 </div>
                                 <ul style='font-size: 15px;' class="list-group text-center bold">
                                     <li class="list-group-item">{!! $p->val1  !!}  </li>
-                                    <li class="list-group-item">Currency - {!! $p->currency  !!}  </li>
+                                    <li class="list-group-item">Tiền tệ - {!! $p->currency  !!}  </li>
                                     <li class="list-group-item">1 {!! $basic->currency  !!} = {{ $p->rate }} {{ $p->currency }} </li>
-                                    <li class="list-group-item"> Fix Charge - {{ $p->fix }} {{ $basic->currency }}</li>
-                                    <li class="list-group-item"> Percentage - {{ $p->percent }}<i class="fa fa-percent"></i></li>
+                                    <li class="list-group-item"> Khắc phục phí- {{ $p->fix }} {{ $basic->currency }}</li>
+                                    <li class="list-group-item"> Phần trăm - {{ $p->percent }}<i class="fa fa-percent"></i></li>
                                     <li class="list-group-item"><span class="aaaa">{{ $p->status == 1 ? "Active" : 'DeActive' }}</span></li>
                                 </ul>
                                 <div class="panel-footer" style="overflow: hidden">
                                     <div class="col-sm-12">
-                                        <a class="btn btn-block btn-primary bold uppercase" href="{{ route('bank-edit',$p->id) }}"><i class="fa fa-edit"></i> EDIT </a>
+                                        <a class="btn btn-block btn-primary bold uppercase" href="{{ route('bank-edit',$p->id) }}"><i class="fa fa-edit"></i> CHỈNH SỬA </a>
                                     </div>
 
                                 </div>

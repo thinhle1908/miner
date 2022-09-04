@@ -23,10 +23,10 @@
                         <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Miner Name</th>
-                            <th>Coin Code</th>
-                            <th>Plans</th>
-                            <th>Edit</th>
+                            <th>Tên loại tiền</th>
+                            <th>Mã tiền</th>
+                            <th>Kế hoạch</th>
+                            <th>Chỉnh sửa</th>
                         </tr>
                         </thead>
                         <tbody id="products-list" name="products-list">
@@ -36,7 +36,7 @@
                                     <td>{{$category->id}}</td>
                                     <td>{{$category->name}}</td>
                                     <td>{{$category->code}}</td>
-                                    <td>{{ count($category->plans) }} Plans</td>
+                                    <td>{{ count($category->plans) }} Kế Hoạch</td>
                                     <td>
                                         <button data-id="{{ $category->id }}" data-name="{{ $category->name }}" data-code="{{ $category->code }}" class="btn btn-warning editbtn" role="button">
                                             <i class="fa fa-edit"></i>

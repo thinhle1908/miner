@@ -16,16 +16,16 @@
                         <div class="col-sm-4 text-center">
                             <div class="panel panel-green panel-pricing">
                                 <div class="panel-heading">
-                                    <h3 style="font-size: 28px; color: #ffffff"><b>{{ $coin->miner->code }} Withdraw</b></h3>
+                                    <h3 style="font-size: 28px; color: #ffffff"><b>{{ $coin->miner->code }} Rút</b></h3>
                                 </div>
                                 <ul style='font-size: 15px;' class="list-group text-center bold">
-                                    <li class="list-group-item">Wallet - <b>{!! $coin->wallet !!}</b> </li>
-                                    <li class="list-group-item">Current Balance - <b>{!! $coin->balance !!}</b> {{ $coin->miner->code }} </li>
-                                    <li class="list-group-item">Charge - {{ $basic->withdraw_charge }}% </li>
+                                    <li class="list-group-item">Cái ví - <b>{!! $coin->wallet !!}</b> </li>
+                                    <li class="list-group-item">Số dư Hiện tại- <b>{!! $coin->balance !!}</b> {{ $coin->miner->code }} </li>
+                                    <li class="list-group-item">Thay đổi - {{ $basic->withdraw_charge }}% </li>
                                 </ul>
                                 <div class="panel-footer" style="overflow: hidden">
                                     <div class="col-sm-12">
-                                        <a href="#" @if($basic->withdraw_status == 0) disabled @endif class="btn btn-primary btn-block bold btn-own withc" data-code="{{ $coin->miner->code }}" data-id="{{ $coin->id }}"> Withdraw Now</a>
+                                        <a href="#" @if($basic->withdraw_status == 0) disabled @endif class="btn btn-primary btn-block bold btn-own withc" data-code="{{ $coin->miner->code }}" data-id="{{ $coin->id }}"> Rút tiền ngay</a>
                                     </div>
 
                                 </div>
@@ -34,7 +34,7 @@
 
                 @endforeach
             @else
-                <h1 class="text-danger text-center">You Have No Coin Balance For Withdraw</h1>
+                <h1 class="text-danger text-center">Bạn không có số dư tiền xu để rút tiền</h1>
             @endif
 
         </div>
@@ -46,7 +46,7 @@
 
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title"><strong>Withdraw via <span id="edit_name"></span></strong> </h4>
+                        <h4 class="modal-title"><strong>Rút tiền qua <span id="edit_name"></span></strong> </h4>
                     </div>
                     <form method="post" action="{{ route('withdraw', 'general') }}">
                         {{ csrf_field() }}
@@ -56,7 +56,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <span style="margin-bottom: 10px;"><code>Withdraw Charge : (<span id="edit_fix"></span> {{ $basic->currency }} + <span id="edit_percent"></span>%)</code></span>
+                                            <span style="margin-bottom: 10px;"><code>Rút tiền phí : (<span id="edit_fix"></span> {{ $basic->currency }} + <span id="edit_percent"></span>%)</code></span>
                                             <div class="input-group" style="margin-top: 10px;margin-bottom: 10px;">
                                                 <input type="text" value="" id="amount" name="amount" class="form-control" required placeholder="Amount" />
                                                 <span class="input-group-addon">&nbsp;<strong>{{ $basic->currency }}</strong></span>
@@ -67,7 +67,7 @@
                                     <br>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <button type="submit" class="btn btn-primary btn-block btn-own">Withdraw Now</button>
+                                            <button type="submit" class="btn btn-primary btn-block btn-own">Rút tiền ngay</button>
                                         </div>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@
 
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title"><strong><span id="edit_cname"></span> Withdraw</strong> </h4>
+                        <h4 class="modal-title"><strong><span id="edit_cname"></span> Rút</strong> </h4>
                     </div>
                     <form method="post" action="{{ route('withdraw', 'coin') }}">
                         {{ csrf_field() }}
@@ -95,7 +95,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <span style="margin-bottom: 10px;"><code>Withdraw Charge : {{ $basic->withdraw_charge }}%</code></span>
+                                            <span style="margin-bottom: 10px;"><code>Rút tiền phí : {{ $basic->withdraw_charge }}%</code></span>
                                             <div class="input-group" style="margin-top: 10px;margin-bottom: 10px;">
                                                 <input type="text" value="" id="amount" name="amount" class="form-control" required placeholder="Amount" />
                                                 <span class="input-group-addon">&nbsp;<strong><span id="ccurrency"></span></strong></span>
@@ -106,7 +106,7 @@
                                     <br>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <button type="submit" class="btn btn-primary btn-block btn-own">Withdraw Now</button>
+                                            <button type="submit" class="btn btn-primary btn-block btn-own">Rút tiền ngay</button>
                                         </div>
                                     </div>
                                 </div>

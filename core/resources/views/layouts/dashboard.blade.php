@@ -93,14 +93,14 @@
                        data-close-others="true">
 
 
-                        <span class="username"> Welcome, {!! Auth::guard('admin')->user()->name !!} </span>
+                        <span class="username"> Chào mừng, {!! Auth::guard('admin')->user()->name !!} </span>
                         <i class="fa fa-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-default">
 
-                        <li><a href="{!! route('admin-change-password') !!}"><i class="fa fa-cogs"></i> Change Password </a>
+                        <li><a href="{!! route('admin-change-password') !!}"><i class="fa fa-cogs"></i> Thay đổi mật khẩu</a>
                         </li>
-                        <li><a href="{!! route('admin.logout') !!}"><i class="fa fa-sign-out"></i> Log Out </a></li>
+                        <li><a href="{!! route('admin.logout') !!}"><i class="fa fa-sign-out"></i> Đăng xuất </a></li>
 
                     </ul>
                 </li>
@@ -127,7 +127,7 @@
 
                 <li class="nav-item start @if(request()->path() == 'admin-dashboard') active open @endif">
                     <a href="{!! route('dashboard') !!}" class="nav-link ">
-                        <i class="icon-home"></i><span class="title">Dashboard</span>
+                        <i class="icon-home"></i><span class="title">Bảng Điều Khiển</span>
                     </a>
                 </li>
 
@@ -143,27 +143,27 @@
 
                 @endif">
                     <a href="javascript:;" class="nav-link nav-toggle"><i class="fa fa-list"></i>
-                        <span class="title">Mining Plan</span><span class="arrow"></span></a>
+                        <span class="title">Kế Hoạch Khai Thác</span><span class="arrow"></span></a>
                     <ul class="sub-menu">
                         <li class="nav-item">
                             <a href="{!! route('category.index') !!}" class="nav-link nav-toggle"><i class="fa fa-desktop"></i>
-                                <span class="title">Miner</span></a>
+                                <span class="title">Loại Tiền</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('plan.addNew') !!}" class="nav-link nav-toggle"><i class="fa fa-plus"></i>
-                                <span class="title">Create New Plan</span></a>
+                                <span class="title">Tạo Kế Hoạch Mới</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('plan.index') !!}" class="nav-link nav-toggle"><i class="fa fa-desktop"></i>
-                                <span class="title">View All Plan</span></a>
+                                <span class="title">Xem Tất Cả Kế Hoạch</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('plan.request') !!}" class="nav-link nav-toggle"><i class="fa fa-desktop"></i>
-                                <span class="title">Plan Request</span></a>
+                                <span class="title">Yêu Cầu Kế Hoạch</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('plan.logs') !!}" class="nav-link nav-toggle"><i class="fa fa-desktop"></i>
-                                <span class="title">Plan Logs</span></a>
+                                <span class="title">Lập Lịch Nhật Ký</span></a>
                         </li>
                     </ul>
                 </li>
@@ -174,15 +174,15 @@
 
                 @endif">
                     <a href="javascript:;" class="nav-link nav-toggle"><i class="fa fa-cloud-upload"></i>
-                        <span class="title">Deposit</span><span class="arrow"></span></a>
+                        <span class="title">Tiền gửi</span><span class="arrow"></span></a>
                     <ul class="sub-menu">
                         <li class="nav-item">
                             <a href="{!! route('deposit-method')  !!}" class="nav-link nav-toggle"><i class="fa fa-desktop"></i>
-                                <span class="title">Deposit Methods</span></a>
+                                <span class="title">Phương thức gửi tiền</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('user-deposit-history')  !!}" class="nav-link nav-toggle"><i class="fa fa-list"></i>
-                                <span class="title">Deposit Logs</span></a>
+                                <span class="title">Nhật ký tiền gửi</span></a>
                         </li>
                     </ul>
                 </li>
@@ -197,23 +197,23 @@
 
                 @endif">
                     <a href="javascript:;" class="nav-link nav-toggle"><i class="fa fa-exchange"></i>
-                        <span class="title">Withdraw</span><span class="arrow"></span></a>
+                        <span class="title">Rút</span><span class="arrow"></span></a>
                     <ul class="sub-menu">
                         <li class="nav-item">
                             <a href="{!! route('withdraw-confirm-show') !!}" class="nav-link nav-toggle"><i class="fa fa-check"></i>
-                                <span class="title">Completed Withdraw</span></a>
+                                <span class="title">Rút Tiền Đã Hoàn Thành</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('withdraw-pending')  !!}" class="nav-link nav-toggle"><i class="fa fa-spinner"></i>
-                                <span class="title">Pending Withdraw</span></a>
+                                <span class="title">Rút Tiền Đang Chờ Xử Lý</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('withdraw-refund-show')  !!}" class="nav-link nav-toggle"><i class="fa fa-times"></i>
-                                <span class="title">Refunded Withdraw</span></a>
+                                <span class="title">Rút Tiền Được Hoàn Lại</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('withdraw-request-all')  !!}" class="nav-link nav-toggle"><i class="fa fa-cloud-upload"></i>
-                                <span class="title">Withdraw History</span></a>
+                                <span class="title">Lịch Sử Rút Tiền</span></a>
                         </li>
                     </ul>
                 </li>
@@ -230,27 +230,27 @@
 
                 @endif">
                     <a href="javascript:;" class="nav-link nav-toggle"><i class="fa fa-users"></i>
-                        <span class="title">Manage User</span><span class="arrow"></span></a>
+                        <span class="title">Quản Lý Người Dùng</span><span class="arrow"></span></a>
                     <ul class="sub-menu">
                         <li class="nav-item">
                             <a href="{!! route('manage-user') !!}" class="nav-link nav-toggle"><i class="fa fa-desktop"></i>
-                                <span class="title">All Users</span></a>
+                                <span class="title">Tất Cả Người Dùng</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('show-block-user') !!}" class="nav-link nav-toggle"><i class="fa fa-user-times"></i>
-                                <span class="title">Block Users</span></a>
+                                <span class="title">Chặn Người Dùng</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('all-verify-user') !!}" class="nav-link nav-toggle"><i class="fa fa-check"></i>
-                                <span class="title">Verified Users</span></a>
+                                <span class="title">Người Dùng Đã Xác Minh</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('phone-unverified-user') !!}" class="nav-link nav-toggle"><i class="fa fa-tty"></i>
-                                <span class="title">Phone Unverified</span></a>
+                                <span class="title">Số Điện Thoại Chưa Xác Minh</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('email-unverified-user') !!}" class="nav-link nav-toggle"><i class="fa fa-envelope-open"></i>
-                                <span class="title">Email Unverified</span></a>
+                                <span class="title">Email Chưa Xác Minh</span></a>
                         </li>
                     </ul>
                 </li>
@@ -260,15 +260,15 @@
 
                 @endif">
                     <a href="javascript:;" class="nav-link nav-toggle"><i class="fa fa-handshake-o"></i>
-                        <span class="title">Support Ticket</span><span class="arrow"></span></a>
+                        <span class="title">Vé Ủng Hộ</span><span class="arrow"></span></a>
                     <ul class="sub-menu">
                         <li class="nav-item">
                             <a href="{!! route('admin-support') !!}" class="nav-link nav-toggle"><i class="fa fa-desktop"></i>
-                                <span class="title">All Ticket</span></a>
+                                <span class="title">Tất Cả Vé</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('admin-support-pending') !!}" class="nav-link nav-toggle"><i class="fa fa-spinner"></i>
-                                <span class="title">Pending Support</span></a>
+                                <span class="title">Hỗ Trợ Đang Chờ Xử Lý</span></a>
                         </li>
                     </ul>
                 </li>
@@ -282,23 +282,23 @@
 
                 @endif">
                     <a href="javascript:;" class="nav-link nav-toggle"><i class="fa fa-desktop"></i>
-                        <span class="title">Web Control</span><span class="arrow"></span></a>
+                        <span class="title">Điều Khiển Web</span><span class="arrow"></span></a>
                     <ul class="sub-menu">
                         <li class="nav-item">
                             <a href="{!! route('basic-setting') !!}" class="nav-link nav-toggle"><i class="fa fa-cogs"></i>
-                                <span class="title">Basic Setting</span></a>
+                                <span class="title">Thiết Lập Cơ Bản</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('contact-setting') !!}" class="nav-link nav-toggle"><i class="fa fa-cogs"></i>
-                                <span class="title">Contact Setting</span></a>
+                                <span class="title">Cài Đặt Liên Hệ</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('email-setting') !!}" class="nav-link"><i class="fa fa-cogs"></i>
-                                Email Setting </a>
+                                Cài Đặt Email </a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('sms-setting') !!}" class="nav-link"><i class="fa fa-cogs"></i>
-                                SMS Setting </a>
+                                Cài Đặt SMS </a>
                         </li>
                     </ul>
                 </li>
@@ -339,7 +339,7 @@
 
                 @endif">
                     <a href="javascript:;" class="nav-link nav-toggle"><i class="fa fa-th"></i>
-                        <span class="title">Interface Control</span><span class="arrow"></span></a>
+                        <span class="title">Kiểm Soát Giao Diện</span><span class="arrow"></span></a>
                     <ul class="sub-menu">
                         <li class="nav-item">
                             <a href="{!! route('manage-logo') !!}" class="nav-link"><i class="fa fa-photo"></i>
@@ -347,69 +347,69 @@
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('tap') !!}" class="nav-link"><i class="fa fa-key"></i>
-                                Terms And Policy</a>
+                                Điều Kiện Và Chính Sách</a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('partner.index') !!}" class="nav-link"><i class="fa fa-users"></i>
-                                Partners</a>
+                                Đối Tác</a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('procedure.index') !!}" class="nav-link"><i class="fa fa-sitemap"></i>
-                                Work Procedure</a>
+                                Trình Tự Công Việc</a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('manage-footer') !!}" class="nav-link"><i class="fa fa-sitemap"></i>
-                                Manage Footer</a>
+                                Quản Lý Chân Trang</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('slider') }}" class="nav-link nav-toggle"><i class="fa fa-picture-o"></i>
-                                <span class="title">Manage Slider</span></a>
+                                <span class="title">Quản Lý Thanh Trượt</span></a>
                         </li>
                          <li class="nav-item">
                             <a href="{{ route('feature') }}" class="nav-link nav-toggle"><i class="fa fa-picture-o"></i>
-                                <span class="title">Manage Features</span></a>
+                                <span class="title">Quản Lý Tính Năng</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('manage-subtitle') }}" class="nav-link nav-toggle"><i class="fa fa-file-text-o"></i>
-                                <span class="title">Manage Subtitle</span></a>
+                                <span class="title">Quản Lý Phụ Đề</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('manage-about-text') }}" class="nav-link nav-toggle"><i class="fa fa-file-text-o"></i>
-                                <span class="title">Manage About Text</span></a>
+                                <span class="title">Quản Lý Văn Bản Giới Thiệu</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('manage-service') }}" class="nav-link nav-toggle"><i class="fa fa-th"></i>
-                                <span class="title">Manage Service</span></a>
+                                <span class="title">Quản Lý Dịch Vụ</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('manage-social') }}" class="nav-link nav-toggle"><i class="fa fa-share-alt-square"></i>
-                                <span class="title">Manage Social</span></a>
+                                <span class="title">Quản Lý Mạng Xã Hội</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('menu-control') !!}" class="nav-link"><i class="fa fa-desktop"></i>
-                                Menu Control </a>
+                                Điều Khiển Menu </a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('manage-breadcrumb') !!}" class="nav-link"><i class="fa fa-desktop"></i>
-                                Breadcrumb Image</a>
+                                Hình Ảnh Breadcrumb</a>
                         </li>
                         <li class="nav-item">
                             <a href="{!! route('manage-about') !!}" class="nav-link"><i class="fa fa-address-card"></i>
-                                About Page</a>
+                                Giới Thiệu Trang</a>
                         </li>
                         <li class="nav-item @if(request()->path() == 'admin/testimonial-create') active open
 
                     @elseif(request()->path() == 'admin/testimonial-all') active open @endif">
                             <a href="javascript:;" class="nav-link nav-toggle"><i class="fa fa-clone"></i>
-                                <span class="title">Manage Testimonial</span><span class="arrow"></span></a>
+                                <span class="title">Quản Lý Lời Chứng Thực</span><span class="arrow"></span></a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
                                     <a href="{!! route('testimonial-create') !!}" class="nav-link"><i class="fa fa-plus"></i>
-                                        New Testimonial</a>
+                                        Lời Chứng Thực Mới</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="{!! route('testimonial-all') !!}" class="nav-link"><i class="fa fa-desktop"></i>
-                                        All Testimonial</a>
+                                        Tất Cả Lời Chứng Thực</a>
                                 </li>
                             </ul>
                         </li>
@@ -419,15 +419,15 @@
 
                 @endif">
                             <a href="javascript:;" class="nav-link nav-toggle"><i class="fa fa-arrows"></i>
-                                <span class="title">Manage FAQS</span><span class="arrow"></span></a>
+                                <span class="title">Quản Lý FAQS</span><span class="arrow"></span></a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
                                     <a href="{!! route('faqs-create') !!}" class="nav-link"><i class="fa fa-plus"></i>
-                                        New Question</a>
+                                        Câu Hỏi Mới</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="{!! route('faqs-all') !!}" class="nav-link"><i class="fa fa-desktop"></i>
-                                        All Question</a>
+                                        Tất Cả Câu Hỏi</a>
                                 </li>
                             </ul>
                         </li>

@@ -30,25 +30,25 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Footer Text</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Văn bản chân trang</strong></label>
                                     <div class="col-md-12">
                                         <textarea name="footer_text" id="area2" cols="10" rows="3" class="form-control input-lg" required>{{ $basic->footer_text }}</textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Change Footer Image</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Tải lên biểu trưng mới</strong></label>
                                     <div class="col-md-12">
                                         <span class="btn green fileinput-button">
                                                 <i class="fa fa-plus"></i>
-                                            <span> Upload New Logo </span>
+                                            <span>Tải lên biểu trưng mới </span>
                                             <input type="file" name="logo" class="form-control input-lg"> </span>
-                                        <code style="margin-top: 5px;font-weight: bold;">Image Type : PNG,JPG,JPEG. and Good Regulation Recommended.</code>
+                                        <code style="margin-top: 5px;font-weight: bold;">Loại hình ảnh: PNG, JPG, JPEG. và Khuyến nghị Quy chế Tốt.</code>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Copyright Text</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Văn bản Bản quyền</strong></label>
                                     <div class="col-md-12">
                                         <textarea name="copy_text" id="area1" class="form-control" required>{{ $basic->copy_text }}</textarea>
                                     </div>
@@ -56,7 +56,7 @@
 
                                 <div class="form-group">
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-send"></i> UPDATE</button>
+                                        <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-send"></i> CẬP NHẬT</button>
                                     </div>
                                 </div>
                             </div>

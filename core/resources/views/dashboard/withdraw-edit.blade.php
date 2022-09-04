@@ -29,10 +29,10 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Method Name</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Tên phương pháp</strong></label>
                                     <div class="col-sm-12">
                                         <div class="input-group mb15">
-                                            <input class="form-control input-lg bold" name="name" value="{{ $bank->name }}" required type="text" placeholder="Method Name">
+                                            <input class="form-control input-lg bold" name="name" value="{{ $bank->name }}" required type="text" placeholder="Tên phương pháp">
                                             <span class="input-group-addon"><i class="fa fa-cloud-upload"></i></span>
                                         </div>
                                     </div>
@@ -40,11 +40,11 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Change Method Photo</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Thay đổi hình ảnh phương pháp</strong></label>
                                     <div class="col-sm-12">
                                         <span class="btn green fileinput-button">
                                             <i class="fa fa-plus"></i>
-                                            <span> Upload New Photo </span>
+                                            <span> Tải lên ảnh mới </span>
                                             <input class="form-control input-lg" name="image" value="" type="file" >
                                         </span>
 
@@ -60,10 +60,10 @@
 
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Minimum </strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Tối thiểu </strong></label>
                                     <div class="col-sm-12">
                                         <div class="input-group mb15">
-                                            <input class="form-control input-lg bold" name="withdraw_min" value="{{ $bank->withdraw_min }}" required type="text" placeholder="Minimum">
+                                            <input class="form-control input-lg bold" name="withdraw_min" value="{{ $bank->withdraw_min }}" required type="text" placeholder="Tối thiểu">
                                             <span class="input-group-addon"><strong>{{ $basic->currency }}</strong></span>
                                         </div>
                                     </div>
@@ -72,10 +72,10 @@
 
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Maximum </strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Tối đa </strong></label>
                                     <div class="col-sm-12">
                                         <div class="input-group mb15">
-                                            <input class="form-control input-lg bold" name="withdraw_max" value="{{ $bank->withdraw_max }}" required type="text" placeholder="Maximum">
+                                            <input class="form-control input-lg bold" name="withdraw_max" value="{{ $bank->withdraw_max }}" required type="text" placeholder="Tối đa">
                                             <span class="input-group-addon"><strong>{{ $basic->currency }}</strong></span>
                                         </div>
                                     </div>
@@ -83,11 +83,11 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Processing Time </strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Thời gian xử lý </strong></label>
                                     <div class="col-sm-12">
                                         <div class="input-group mb15">
-                                            <input class="form-control input-lg bold" name="duration" value="{{ $bank->duration }}" required type="text" placeholder="Processing Time">
-                                            <span class="input-group-addon"><strong>Days</strong></span>
+                                            <input class="form-control input-lg bold" name="duration" value="{{ $bank->duration }}" required type="text" placeholder="Thời gian xử lý">
+                                            <span class="input-group-addon"><strong>Ngày</strong></span>
                                         </div>
                                     </div>
                                 </div>
@@ -96,10 +96,10 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Fix Charge </strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Khắc phục phí </strong></label>
                                     <div class="col-sm-12">
                                         <div class="input-group mb15">
-                                            <input class="form-control input-lg bold" name="fix" value="{{ $bank->fix }}" required type="text" placeholder="Fix Charge">
+                                            <input class="form-control input-lg bold" name="fix" value="{{ $bank->fix }}" required type="text" placeholder="Khắc phục phí">
                                             <span class="input-group-addon"><strong>{{ $basic->currency }}</strong></span>
                                         </div>
                                     </div>
@@ -107,10 +107,10 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Percentage </strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Phần trăm </strong></label>
                                     <div class="col-sm-12">
                                         <div class="input-group mb15">
-                                            <input class="form-control input-lg bold" name="percent" value="{{ $bank->percent }}" required type="text" placeholder="Percentage">
+                                            <input class="form-control input-lg bold" name="percent" value="{{ $bank->percent }}" required type="text" placeholder="Phần trăm">
                                             <span class="input-group-addon"><i class="fa fa-percent"></i></span>
                                         </div>
                                     </div>
@@ -118,7 +118,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Status </strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Trạng thái </strong></label>
                                     <div class="col-sm-12">
                                         <input data-toggle="toggle" {{ $bank->status == 1 ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-width="100%" data-size="large" type="checkbox" name="status">
                                     </div>
@@ -127,7 +127,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <button class="btn btn-primary btn-block uppercase btn-lg"><i class="fa fa-send"></i> Update Withdraw Method</button>
+                                <button class="btn btn-primary btn-block uppercase btn-lg"><i class="fa fa-send"></i> Cập nhật phương thức rút tiền</button>
                             </div>
                         </div>
                     </div>

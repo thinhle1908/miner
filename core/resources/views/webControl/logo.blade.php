@@ -19,7 +19,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="panel panel-primary">
-                                <div class="panel-heading">Present Logo</div>
+                                <div class="panel-heading">Logo hiện tại</div>
                                 <div class="panel-body">
                                     <img src="{{ asset('assets/images/logo/logo.png') }}" class="img-responsive" width="40%" height="30">
                                 </div>
@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="panel panel-success">
-                                <div class="panel-heading">Present Icon</div>
+                                <div class="panel-heading">Icon hiện tại</div>
                                 <div class="panel-body">
                                     <img src="{{ asset('assets/images/logo/icon.png') }}" class="img-responsive" width="40%" height="30">
                                 </div>
@@ -43,7 +43,7 @@
                                     <div class="form-group">
                                             <span class="btn green fileinput-button">
                                                 <i class="fa fa-plus"></i>
-                                            <span> Upload New Logo </span>
+                                            <span> Tải lên logo mới </span>
                                             <input type="file" name="logo" class="form-control input-lg"> </span>
                                     </div>
                                 </div>
@@ -52,14 +52,14 @@
                                     <div class="form-group">
                                             <span class="btn green fileinput-button">
                                                 <i class="fa fa-plus"></i>
-                                                <span> Upload New Icon </span>
+                                                <span> Tải lên icon mới </span>
                                                 <input type="file" name="favicon" class="form-control input-lg">
                                             </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-actions right col-md-12">
-                                <button type="submit" class="btn blue btn-lg btn-block">Update</button>
+                                <button type="submit" class="btn blue btn-lg btn-block">Tải lên</button>
                             </div>
                         </form>
                     </div>

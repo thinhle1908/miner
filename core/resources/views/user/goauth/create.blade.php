@@ -1,43 +1,43 @@
 @extends('layouts.user-frontend.user-dashboard')
 @section('content')    	
 <div class="col-md-8 col-md-offset-2">
-<h3 class="text-bold text-center">Two Factor Authenticator
+<h3 class="text-bold text-center">Trình xác thực hai yếu tố
 </h3>
 		
 @if(Auth::user()->tauth == '1')
 <div class="panel panel-inverse">
   <div class="panel-body text-center">
 		<div class="form-group">
-			<label style="text-transform: capitalize;">use google authenticator to scan the QR code below or use the below code</label>
-<a class="btn btn-success btn-md" href="" target="_blank">DOWNLOAD APP</a>
+			<label style="text-transform: capitalize;">Sử dụng trình xác thực google để quét mã QR bên dưới hoặc sử dụng mã bên dưới</label>
+<a class="btn btn-success btn-md" href="" target="_blank">TẢI ỨNG DỤNG</a>
 
 			<div class="input-group">
 			<input type="text" value="{{$prevcode}}" class="form-control input-lg" id="code" readonly>
-				<span class="input-group-addon btn btn-success" id="copybtn">Copy</span>
+				<span class="input-group-addon btn btn-success" id="copybtn">Sao chép</span>
 			</div>	
 		</div>
 		<div class="form-group">
              <img src="{{$prevqr}}">
         </div>
-		<button type="button" class="btn btn-block btn-lg btn-danger" data-toggle="modal" data-target="#disableModal">Disable Two Factor Authenticator</button>	
+		<button type="button" class="btn btn-block btn-lg btn-danger" data-toggle="modal" data-target="#disableModal">Tắt trình xác thực hai yếu tố</button>	
   </div>
 </div>
 @else
 <div class="panel panel-info">
 <div class="panel-body text-center">
 		<div class="form-group">
-			<label style="text-transform: capitalize;">use google authenticator to scan the QR code below or use the below code</label><br/>
-<a class="btn btn-success btn-md" href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en" target="_blank">DOWNLOAD APP</a>
+			<label style="text-transform: capitalize;">sử dụng trình xác thực google để quét mã QR bên dưới hoặc sử dụng mã bên dưới</label><br/>
+<a class="btn btn-success btn-md" href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en" target="_blank">TẢI ỨNG DỤNG</a>
 <hr/>
 			<div class="input-group">
 			<input type="text" name="key" value="{{$secret}}" class="form-control input-lg" id="code" readonly>
-				<span class="input-group-addon btn btn-success" id="copybtn">Copy</span>
+				<span class="input-group-addon btn btn-success" id="copybtn">Sao chép</span>
 			</div>	
 		</div>
 		<div class="form-group">
              <img src="{{$qrCodeUrl}}">
         </div>
-		<button type="button" class="btn btn-block btn-lg btn-primary" data-toggle="modal" data-target="#enableModal">Enable Two Factor Authenticator</button>	
+		<button type="button" class="btn btn-block btn-lg btn-primary" data-toggle="modal" data-target="#enableModal">Bật trình xác thực hai yếu tố</button>	
 </div>
 </div>
 @endif

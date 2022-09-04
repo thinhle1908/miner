@@ -28,7 +28,7 @@
                     <div class="portlet box green">
                         <div class="portlet-title">
                             <div class="caption">
-                                <i class="fa fa-bookmark"></i>Short Code</div>
+                                <i class="fa fa-bookmark"></i>MÃ NGẮN</div>
 
                         </div>
                         <div class="portlet-body">
@@ -37,8 +37,8 @@
                                     <thead>
                                     <tr>
                                         <th> # </th>
-                                        <th> CODE </th>
-                                        <th> DESCRIPTION </th>
+                                        <th> MÃ </th>
+                                        <th> MÔ TẢ </th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -47,13 +47,13 @@
                                     <tr>
                                         <td> 1 </td>
                                         <td> <pre>@{{message}}</pre> </td>
-                                        <td> Details Text From Script</td>
+                                        <td> Chi tiết Văn bản Từ Tập lệnh</td>
                                     </tr>
 
                                     <tr>
                                         <td> 2 </td>
                                         <td> <pre>@{{number}}</pre> </td>
-                                        <td> Destination Number</td>
+                                        <td>Số điểm</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -81,7 +81,7 @@
 
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <button type="submit" class="btn blue btn-block btn-lg">UPDATE</button>
+                                            <button type="submit" class="btn blue btn-block btn-lg">CẬP NHẬT</button>
                                         </div>
                                     </div>
 

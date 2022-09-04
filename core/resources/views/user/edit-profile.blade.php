@@ -36,11 +36,11 @@
                             
                             <div class="img-input-div">
                                                 <span class="btn btn-info btn-file">
-                                                    <span class="fileinput-new bold uppercase"><i class="fa fa-file-image-o"></i> Select image</span>
-                                                    <span class="fileinput-exists bold uppercase"><i class="fa fa-edit"></i> Change</span>
+                                                    <span class="fileinput-new bold uppercase"><i class="fa fa-file-image-o"></i> Chọn ảnh</span>
+                                                    <span class="fileinput-exists bold uppercase"><i class="fa fa-edit"></i> Biến đổi</span>
                                                     <input type="file" name="image" accept="image/*">
                                                 </span>
-                                <a href="#" class="btn btn-danger fileinput-exists bold uppercase" data-dismiss="fileinput"><i class="fa fa-trash"></i> Remove</a>
+                                <a href="#" class="btn btn-danger fileinput-exists bold uppercase" data-dismiss="fileinput"><i class="fa fa-trash"></i> Loại bỏ</a>
                             </div>
                         </div>
                     </div>
@@ -50,17 +50,17 @@
                      <div class="row">
                         <div class="col-md-6">
                                              <div class="form-group">
-                                        <label class="col-md-12"><strong style="text-transform: uppercase;">Name :</strong></label>
+                                        <label class="col-md-12"><strong style="text-transform: uppercase;">Tên :</strong></label>
                                         <div class="col-md-12">
-                                            <input type="text" name="name" id="" value="{{ $user->name }}"  required placeholder="Name">
+                                            <input type="text" name="name" id="" value="{{ $user->name }}"  required placeholder="Tên">
                                         </div>
                                     </div>
                         </div>
                         <div class="col-md-6">
                                             <div class="form-group">
-                                        <label class="col-md-12"><strong style="text-transform: uppercase;">User Name :</strong></label>
+                                        <label class="col-md-12"><strong style="text-transform: uppercase;">Tên tài khoản :</strong></label>
                                         <div class="col-md-12">
-                                            <input type="text" name="username" id="" value="{{ $user->username }}" required placeholder="Username">
+                                            <input type="text" name="username" id="" value="{{ $user->username }}" required placeholder="Tên tài khoản">
                                         </div>
                                     </div>
                         </div>
@@ -75,9 +75,9 @@
                         </div>
                         <div class="col-md-6">
                              <div class="form-group">
-                    <label class="col-md-12"><strong style="text-transform: uppercase;">Phone :</strong></label>
+                    <label class="col-md-12"><strong style="text-transform: uppercase;">Điện thoại :</strong></label>
                     <div class="col-md-12">
-                        <input type="text" name="phone" id="" value="{{ $user->phone }}" required placeholder="Phone">
+                        <input type="text" name="phone" id="" value="{{ $user->phone }}" required placeholder="Điện thoại">
                     </div>
                 </div>
                         </div>
@@ -87,7 +87,7 @@
             <div class="row">
                                 <div class="form-group">
                     <div class="col-md-9 col-md-offset-3">
-                        <button type="submit" class="new-btn-submit"><i class="fa fa-send"></i> UPDATE PROFILE</button>
+                        <button type="submit" class="new-btn-submit"><i class="fa fa-send"></i> CẬP NHẬT HỒ SƠ</button>
                     </div>
                 </div>
             </div>

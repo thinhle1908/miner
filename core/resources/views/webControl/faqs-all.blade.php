@@ -25,13 +25,13 @@
                                     <br>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <a href="{{ route('faqs-edit',$f->id) }}" class="btn btn-primary btn-block bold uppercase"><i class="fa fa-edit"></i> Edit faqs</a>
+                                            <a href="{{ route('faqs-edit',$f->id) }}" class="btn btn-primary btn-block bold uppercase"><i class="fa fa-edit"></i> Chỉnh sửa faqs</a>
                                         </div>
                                         <div class="col-md-6">
                                             <button type="button" class="btn btn-danger bold uppercase btn-block delete_button"
                                                     data-toggle="modal" data-target="#DelModal"
                                                     data-id="{{ $f->id }}">
-                                                <i class='fa fa-trash'></i> Delete faqs
+                                                <i class='fa fa-trash'></i> Xóa faqs
                                             </button>
                                         </div>
                                     </div>
@@ -56,7 +56,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title bold" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i> Confirmation !</h4>
+                    <h4 class="modal-title bold" id="myModalLabel"> <i class='fa fa-exclamation-triangle'></i> Xác nhận !</h4>
                 </div>
 
                 <div class="modal-body">
@@ -68,8 +68,8 @@
                         {!! csrf_field() !!}
                         {{ method_field('DELETE') }}
                         <input type="hidden" name="id" class="abir_id" value="0">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> DELETE</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Đóng</button>
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> XÓA BỎ</button>
                     </form>
                 </div>
 

@@ -19,7 +19,7 @@
                             <img width="100%" class="image-responsive" src="{{ asset('assets/images') }}/{{ $method->image }}" alt="{{ $method->name }}">
                         </div>
                         <div class="panel-footer">
-                            <a href="#" class="btn btn-primary btn-block btn-icon icon-lef bold uppercaset toggle btn-own" data-name="{{ $method->name }}" data-type="{{ $method->id }}" data-fix="{{ $method->fix }}" data-per="{{ $method->percent }}">ADD FUND</a>
+                            <a href="#" class="btn btn-primary btn-block btn-icon icon-lef bold uppercaset toggle btn-own" data-name="{{ $method->name }}" data-type="{{ $method->id }}" data-fix="{{ $method->fix }}" data-per="{{ $method->percent }}">THÊM QUỸ</a>
                         </div>
                     </div>
                 </div>

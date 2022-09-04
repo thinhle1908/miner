@@ -20,10 +20,10 @@
                         <thead>
                         <tr>
                             <th> ID </th>
-                            <th> User </th>
-                            <th> Plan </th>
-                            <th> Miner </th>
-                            <th> Status </th>
+                            <th> Tài Khoản </th>
+                            <th> Kế Hoạch </th>
+                            <th> Loại Tiền </th>
+                            <th> Trạng Thái </th>
                         </tr>
                         </thead>
                         <tbody>

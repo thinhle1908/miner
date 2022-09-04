@@ -30,7 +30,7 @@
 
                             <div class="col-md-5">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong>OPERATION</strong></label>
+                                    <label class="col-md-12"><strong>HOẠT ĐỘNG</strong></label>
                                     <div class="col-md-12">
                                         <input data-toggle="toggle" checked data-onstyle="success" data-offstyle="danger" data-on="Add Money" data-off="substruct Money"  data-width="100%" data-height="46" type="checkbox" name="operation">
                                     </div>
@@ -39,7 +39,7 @@
 
                             <div class="col-md-7">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong>Amount</strong></label>
+                                    <label class="col-md-12"><strong>Số lượng</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group mb15">
                                             <input class="form-control bold input-lg" name="amount"  type="text" required="">
@@ -56,9 +56,9 @@
                         <div class="row uppercase">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong>Reason</strong></label>
+                                    <label class="col-md-12"><strong>Lý do</strong></label>
                                     <div class="col-md-12">
-                                        <textarea name="reason" rows="4" class="form-control" placeholder="Reason" required></textarea>
+                                        <textarea name="reason" rows="4" class="form-control" placeholder="Lý do" required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
                         <div class="row uppercase">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-success btn-lg btn-block"> SUBMIT </button>
+                                    <button type="submit" class="btn btn-success btn-lg btn-block"> GỬI </button>
                                 </div>
                             </div>
                         </div><!-- row -->
@@ -83,11 +83,11 @@
             <div class="portlet box blue">
                 <div class="portlet-title">
                     <div class="caption uppercase bold">
-                        <i class="fa fa-money"></i>  CURRENT BALANCE</div>
+                        <i class="fa fa-money"></i>  SỐ DƯ HIỆN TẠI</div>
                 </div>
                 <div class="portlet-body text-center">
 
-                    <h3>CURRENT BALANCE OF <br><br> <strong>Name : {{ $user->name }} <br>User Name : {{ $user->username }} </strong></h3>
+                    <h3>SỐ DƯ HIỆN TẠI <br><br> <strong>Tên : {{ $user->name }} <br>Tên Tài Khoản : {{ $user->username }} </strong></h3>
 
                     <h1><strong>
                             @php $bal = \App\User::whereId($user->id)->first() @endphp

@@ -78,7 +78,7 @@
                         </div>
                         <a>
                             <div class="panel-footer">
-                                <span class="pull-left">Current Balance</span>
+                                <span class="pull-left">Số dư Hiện tại</span>
                                 <div class="clearfix"></div>
                             </div>
                         </a>
@@ -100,7 +100,7 @@
                         </div>
                         <a>
                             <div class="panel-footer">
-                                <span class="pull-left">Total Deposits</span>
+                                <span class="pull-left">Tổng số tiền gửi</span>
                                 <div class="clearfix"></div>
                             </div>
                         </a>
@@ -124,7 +124,7 @@
                                 </div>
                                 <a>
                                     <div class="panel-footer">
-                                        <span class="pull-left">{{ $b->miner->code }} Balance</span>
+                                        <span class="pull-left">{{ $b->miner->code }} Số dư</span>
                                         <div class="clearfix"></div>
                                     </div>
                                 </a>

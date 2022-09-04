@@ -10,12 +10,12 @@
                         <thead>
                         <tr>
                             <th>ID#</th>
-                            <th>Date</th>
-                            <th>Transaction ID</th>
-                            <th>User</th>
-                            <th>Status</th>
-                            <th>Amount</th>
-                            <th style="text-align: center;">Action</th>
+                            <th>Ngày</th>
+                            <th>Mã giao dịch</th>
+                            <th>Tên tài khoản</th>
+                            <th>Trạng Thái</th>
+                            <th>Số lượng</th>
+                            <th style="text-align: center;">Hoạt động</th>
                         </tr>
                         </thead>
 
@@ -30,11 +30,11 @@
                                 <td>{{ $p->user->username }}</td>
                                 <td>
                                     @if($p->status == 0)
-                                        <span class="label bold label-warning"><i class="fa fa-spinner"></i> Waiting</span>
+                                        <span class="label bold label-warning"><i class="fa fa-spinner"></i> Đang Đợi</span>
                                     @elseif($p->status == 1)
-                                        <span class="label bold label-success"><i class="fa fa-check-square-o"></i> Complete</span>
+                                        <span class="label bold label-success"><i class="fa fa-check-square-o"></i> Hoàn Thành</span>
                                     @elseif($p->status == 3)
-                                        <span class="label bold label-danger"><i class="fa fa-times"></i> Cancel</span>
+                                        <span class="label bold label-danger"><i class="fa fa-times"></i> Hủy</span>
                                     @endif
                                 </td>
                                 <td>
@@ -44,12 +44,12 @@
                                     @if($p->status == 0)
                                     <div class="btn-group btn-group-sm btn-group-solid">
 
-                                    <button type="button" class="btn btn-sm delete_button" style="border-radius: 0px; background-color: #5cb85c; color:#fff" value="{{ $p->id }}" data-toggle="modal" href="#small" balance="{{$p->amount}}" status="1" user_id="{{$p->user->id}}">Approve</button>
+                                    <button type="button" class="btn btn-sm delete_button" style="border-radius: 0px; background-color: #5cb85c; color:#fff" value="{{ $p->id }}" data-toggle="modal" href="#small" balance="{{$p->amount}}" status="1" user_id="{{$p->user->id}}">Chấp thuận</button>
 
-                                     <button type="button" class="btn btn-sm red delete_button" style="border-radius: 0px" value="{{ $p->id }}" data-toggle="modal" href="#small" status="2">Cancel </button> </div>
+                                     <button type="button" class="btn btn-sm red delete_button" style="border-radius: 0px" value="{{ $p->id }}" data-toggle="modal" href="#small" status="2">Hủy bỏ </button> </div>
                                     @else
 
-                                    <a href="javascript:;" class="btn default blue-stripe"> <b> Not Available </b></a>
+                                    <a href="javascript:;" class="btn default blue-stripe"> <b> Không có sẵn </b></a>
 
                                     @endif
                                 </td>
@@ -74,13 +74,13 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title"> <b class="text-uppercase"> <span id="modal-heading">Deposit Request Cancel</span> </b></h4>
+        <h4 class="modal-title"> <b class="text-uppercase"> <span id="modal-heading">Yêu cầu tiền gửi Hủy bỏ</span> </b></h4>
       </div>
       <div class="modal-body">
-        <h5> <b>Are you sure about this ?</b></h5>
+        <h5> <b>Bạn có chắc về điều này ?</b></h5>
       </div>
       <div class="modal-footer">
-         <button type="button" class="btn btn-danger btn-block" data-dismiss="modal" id="confirm_delete" style="color:#fff">Yes</button>
+         <button type="button" class="btn btn-danger btn-block" data-dismiss="modal" id="confirm_delete" style="color:#fff">Đúng</button>
       </div>
     </div>
   </div>

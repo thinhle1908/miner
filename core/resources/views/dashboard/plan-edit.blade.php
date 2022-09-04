@@ -36,7 +36,7 @@
 
 
                                 <div class="form-group">
-                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Plan Name :</strong></label>
+                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Tên kế hoạch:</strong></label>
                                     <div class="col-md-8 col-md-offset-2">
                                         <input type="text" name="name" id="" value="{{ $plan->name }}" class="form-control input-lg" required placeholder="Plan Name">
                                     </div>
@@ -44,7 +44,7 @@
 
 
                                 <div class="form-group">
-                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Plan Image :</strong></label>
+                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Hình ảnh kế hoạch :</strong></label>
                                     <div class="col-md-8 col-md-offset-2">
                                         <div class="fileinput fileinput-new" data-provides="fileinput">
                                             <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;" data-trigger="fileinput">
@@ -53,33 +53,33 @@
                                             <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px"></div>
                                             <div>
                                                 <span class="btn btn-info btn-file">
-                                                    <span class="fileinput-new bold uppercase"><i class="fa fa-file-image-o"></i> Select image</span>
-                                                    <span class="fileinput-exists bold uppercase"><i class="fa fa-edit"></i> Change</span>
+                                                    <span class="fileinput-new bold uppercase"><i class="fa fa-file-image-o"></i> Chọn ảnh</span>
+                                                    <span class="fileinput-exists bold uppercase"><i class="fa fa-edit"></i> Thay đổi</span>
                                                     <input type="file" name="image" accept="image/*">
                                                 </span>
-                                                <a href="#" class="btn btn-danger fileinput-exists bold uppercase" data-dismiss="fileinput"><i class="fa fa-trash"></i> Remove</a>
+                                                <a href="#" class="btn btn-danger fileinput-exists bold uppercase" data-dismiss="fileinput"><i class="fa fa-trash"></i> Xóa</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Minimum Amount :</strong></label>
+                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Số tiền tối thiểu :</strong></label>
                                     <div class="col-md-8 col-md-offset-2">
                                         <div class="input-group mb15">
                                             <span class="input-group-addon">{{ $basic->symbol }}</span>
-                                            <input class="form-control input-lg" name="minimum" value="{{ $plan->minimum }}" required type="text" placeholder="Minimum Amount">
+                                            <input class="form-control input-lg" name="minimum" value="{{ $plan->minimum }}" required type="text" placeholder="Số tiền tối thiểu">
                                             <span class="input-group-addon">{{ $basic->currency }}</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Maximum Amount :</strong></label>
+                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Số tiền tối đa :</strong></label>
                                     <div class="col-md-8 col-md-offset-2">
                                         <div class="input-group mb15">
                                             <span class="input-group-addon">{{ $basic->symbol }}</span>
-                                            <input class="form-control input-lg" name="maximum" value="{{ $plan->maximum }}" required type="text" placeholder="Maximum Amount">
+                                            <input class="form-control input-lg" name="maximum" value="{{ $plan->maximum }}" required type="text" placeholder="Số tiền tối đa">
                                             <span class="input-group-addon">{{ $basic->currency }}</span>
                                         </div>
                                     </div>
@@ -87,21 +87,21 @@
 
 
                                 <div class="form-group">
-                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Repeat Percentage :</strong></label>
+                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Phần trăm lặp lại :</strong></label>
                                     <div class="col-md-8 col-md-offset-2">
                                         <div class="input-group mb15">
                                             <span class="input-group-addon">{{ $basic->symbol }}</span>
-                                            <input class="form-control input-lg" name="percent" value="{{ $plan->percent }}" required type="text" placeholder="Repeat Percentage">
+                                            <input class="form-control input-lg" name="percent" value="{{ $plan->percent }}" required type="text" placeholder="Phần trăm lặp lại">
                                             <span class="input-group-addon"><i class="fa fa-percent"></i></span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Repeat Time :</strong></label>
+                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Thời gian lặp lại :</strong></label>
                                     <div class="col-md-8 col-md-offset-2">
                                         <div class="input-group mb15">
-                                            <input class="form-control input-lg" name="time" value="{{ $plan->time }}" required type="text" placeholder="Repeat Time">
+                                            <input class="form-control input-lg" name="time" value="{{ $plan->time }}" required type="text" placeholder="Thời gian lặp lại">
                                             <span class="input-group-addon"><i class="fa fa-bars"></i></span>
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@
 
 
                                 <div class="form-group">
-                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Repeat Compound  :</strong></label>
+                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">Lặp lại Compound  :</strong></label>
                                     <div class="col-md-8 col-md-offset-2">
                                         <div class="input-group mb15">
                                             <select name="compound_id" id="" class="form-control input-lg" required>
@@ -128,7 +128,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">PLAN STATUS :</strong></label>
+                                    <label class="col-md-8  col-md-offset-2"><strong style="text-transform: uppercase;">TRẠNG THÁI KẾ HOẠCH :</strong></label>
                                     <div class="col-md-8 col-md-offset-2">
                                         <input data-toggle="toggle" {{ $plan->status == 1 ? 'checked' : '' }} data-onstyle="success" data-size="large" data-offstyle="danger" data-on="Active" data-off="Deactive" data-width="100%" type="checkbox" name="status">
                                     </div>
@@ -136,7 +136,7 @@
 
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-2">
-                                        <button type="submit" class="btn blue btn-block btn-lg bold uppercase"><i class="fa fa-send"></i> Update PLAN</button>
+                                        <button type="submit" class="btn blue btn-block btn-lg bold uppercase"><i class="fa fa-send"></i> Cập nhật KẾ HOẠCH</button>
                                     </div>
                                 </div>
 

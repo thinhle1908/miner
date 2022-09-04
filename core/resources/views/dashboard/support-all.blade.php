@@ -19,11 +19,11 @@
                             <thead>
                             <tr>
                                 <th>ID#</th>
-                                <th>Date</th>
-                                <th>Ticket Number</th>
-                                <th>Subject</th>
-                                <th>Status</th>
-                                <th>Action</th>
+                                <th>Ngày</th>
+                                <th>Số vé</th>
+                                <th>Vấn đề</th>
+                                <th>Trạng thái</th>
+                                <th>Hoạt động</th>
                             </tr>
                             </thead>
 

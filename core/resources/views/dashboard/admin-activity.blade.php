@@ -18,12 +18,12 @@
                         <thead>
                         <tr>
                             <th>ID#</th>
-                            <th>Date</th>
-                            <th>Transaction ID</th>
-                            <th>User</th>
-                            <th>Type</th>
-                            <th>Amount</th>
-                            <th>Details</th>
+                            <th>Ngày</th>
+                            <th>ID giao dịch</th>
+                            <th>Người sử dụng</th>
+                            <th>Loại hình</th>
+                            <th>Số lượng</th>
+                            <th>Thông tin chi tiết</th>
                         </tr>
                         </thead>
 
@@ -38,27 +38,27 @@
                                 <td>{{ $p->user->username }}</td>
                                 <td>
                                     @if($p->amount_type == 1)
-                                        <span class="label bold label-primary"><i class="fa fa-cloud-download"></i> Deposit</span>
+                                        <span class="label bold label-primary"><i class="fa fa-cloud-download"></i> Tiền gửi</span>
                                     @elseif($p->amount_type == 2)
-                                        <span class="label bold label-danger"><i class="fa fa-minus"></i> Active</span>
+                                        <span class="label bold label-danger"><i class="fa fa-minus"></i> Có hiệu lực</span>
                                     @elseif($p->amount_type == 3)
-                                        <span class="label bold label-success"><i class="fa fa-plus"></i> Reference</span>
+                                        <span class="label bold label-success"><i class="fa fa-plus"></i> Tham khảo</span>
                                     @elseif($p->amount_type == 4)
-                                        <span class="label bold label-success"><i class="fa fa-exchange"></i> Repeat</span>
+                                        <span class="label bold label-success"><i class="fa fa-exchange"></i> Lặp lại<iframe src="" frameborder="0"></iframe></span>
                                     @elseif($p->amount_type == 5)
-                                        <span class="label bold label-primary"><i class="fa fa-cloud-upload"></i> Withdraw</span>
+                                        <span class="label bold label-primary"><i class="fa fa-cloud-upload"></i> Rút</span>
                                     @elseif($p->amount_type == 6)
-                                        <span class="label bold label-danger"><i class="fa fa-cloud-download"></i> Refund</span>
+                                        <span class="label bold label-danger"><i class="fa fa-cloud-download"></i> Hoàn tiền</span>
                                     @elseif($p->amount_type == 8)
-                                        <span class="label bold label-danger"><i class="fa fa-plus"></i> Add </span>
+                                        <span class="label bold label-danger"><i class="fa fa-plus"></i> Thêm </span>
                                     @elseif($p->amount_type == 9)
-                                        <span class="label bold label-success"><i class="fa fa-minus"></i> Subtract </span>
+                                        <span class="label bold label-success"><i class="fa fa-minus"></i> Trừ đi </span>
                                     @elseif($p->amount_type == 10)
-                                        <span class="label bold label-danger"><i class="fa fa-bolt"></i> Charge </span>
+                                        <span class="label bold label-danger"><i class="fa fa-bolt"></i> Sạc pin </span>
                                     @elseif($p->amount_type == 15)
-                                        <span class="label bold label-warning"><i class="fa fa-recycle"></i> Repeat </span>
+                                        <span class="label bold label-warning"><i class="fa fa-recycle"></i> Lặp lại </span>
                                     @elseif($p->amount_type == 14)
-                                        <span class="label bold label-success"><i class="fa fa-cloud-upload"></i> Invest </span>
+                                        <span class="label bold label-success"><i class="fa fa-cloud-upload"></i> Đầu tư </span>
                                     @endif
                                 </td>
                                 <td>

@@ -30,7 +30,7 @@
                             <div class="col-md-10 col-md-offset-1">
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Contact Phone</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Điện thoại liên hệ</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input type="text" name="phone" class="form-control bold input-lg" value="{{ $basic->phone }}" required>
@@ -40,7 +40,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Contact Email</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Địa Chỉ Email Liên Lạc</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input type="text" name="email" class="form-control bold input-lg" value="{{ $basic->email }}" required>
@@ -50,7 +50,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Contact Address</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Địa Chỉ Liên Hệ</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input type="text" name="address" class="form-control bold input-lg" value="{{ $basic->address }}" required>
@@ -60,7 +60,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Google Map Embedded Code</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Mã nhúng Google Map</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input type="text" name="google_map" class="form-control bold input-lg" value="{{ $basic->google_map }}" required>
@@ -71,7 +71,7 @@
 
                                 <div class="form-group">
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-send"></i> UPDATE</button>
+                                        <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-send"></i> Cập nhật</button>
                                     </div>
                                 </div>
                             </div>

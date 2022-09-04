@@ -31,14 +31,14 @@
                                     <p><strong>{{ $p->minimum }} {{ $basic->currency }} - {{ $p->maximum }} {{ $basic->currency }}</strong></p>
                                 </div>
                                 <ul style='font-size: 15px;' class="list-group text-center bold">
-                                    <li class="list-group-item"><i class="fa fa-check"></i> Commission - {{ $p->percent }} <i class="fa fa-percent"></i> </li>
-                                    <li class="list-group-item"><i class="fa fa-check"></i> Repeat - {{ $p->time }} times </li>
+                                    <li class="list-group-item"><i class="fa fa-check"></i> Nhiệm vụ - {{ $p->percent }} <i class="fa fa-percent"></i> </li>
+                                    <li class="list-group-item"><i class="fa fa-check"></i> Lặp lại - {{ $p->time }} times </li>
                                     <li class="list-group-item"><i class="fa fa-check"></i> Compound - <span class="aaaa">{{ $p->compound->name }}</span></li>
                                     <li class="list-group-item"><span class="aaaa">{{ $p->status == 1 ? "Active" : 'DeActive' }}</span></li>
                                 </ul>
                                 <div class="panel-footer" style="overflow: hidden">
                                     <div class="col-sm-12">
-                                        <a class="btn btn-block btn-primary bold uppercase" href="{{ route('plan-edit',$p->id) }}"><i class="fa fa-edit"></i> Edit plan</a>
+                                        <a class="btn btn-block btn-primary bold uppercase" href="{{ route('plan-edit',$p->id) }}"><i class="fa fa-edit"></i> Chỉnh sửa kế hoạch</a>
                                     </div>
 
                                 </div>

@@ -22,14 +22,14 @@
                         <div class="form-body">
 
                             <div class="form-group">
-                                <label class="col-md-12"><strong style="text-transform: uppercase;">Menu Name</strong></label>
+                                <label class="col-md-12"><strong style="text-transform: uppercase;">Tên thực đơn</strong></label>
                                 <div class="col-md-12">
                                     <input class="form-control input-lg" name="name" placeholder="" type="text" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-12"><strong style="text-transform: uppercase;">CONTENT</strong></label>
+                                <label class="col-md-12"><strong style="text-transform: uppercase;">NỘI DUNG</strong></label>
                                 <div class="col-md-12">
                                     <textarea id="area1" class="form-control" rows="15" name="description"></textarea>
                                 </div>
@@ -39,7 +39,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-plus"></i> ADD MENU</button>
+                                    <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-plus"></i> THÊM THỰC ĐƠN</button>
                                 </div>
                             </div>
 

@@ -14,7 +14,7 @@
                 <div class="portlet-title">
                     <div class="caption font-red-sunglo">
                         <i class="icon-settings font-red-sunglo"></i>
-                        <span class="caption-subject bold uppercase">Payment Gateway</span>
+                        <span class="caption-subject bold uppercase">Cổng thanh toán</span>
                     </div>
                 </div>
                 <div class="portlet-body form">
@@ -27,20 +27,20 @@
                                         <i class="fa fa-picture-o"></i> Logo
                                     </th>
                                     <th>
-                                        <i class="fa fa-credit-card"></i> Gateway Name
+                                        <i class="fa fa-credit-card"></i> Tên cổng
                                     </th>
                                     <th>
-                                        Conversion Rate
+                                        Tỷ lệ chuyển đổi
                                     </th>
                                     <th>
-                                        Charge Per Transaction
+                                        Tính phí mỗi giao dịch
                                     </th>
 
                                     <th>
-                                        Status
+                                        Trạng thái
                                     </th>
                                     <th>
-                                        Action
+                                        Hoạt động
                                     </th>
                                 </tr>
                                 </thead>
@@ -57,16 +57,16 @@
                                             1 {!! $basic->currency  !!} = {{ $gateway->rate }} {{ $gateway->currency }}
                                         </td>
                                         <td>
-                                            Fixed: <strong>{{$gateway->fix}}</strong> <br/>   Percentage: <strong>{{$gateway->percent}} %</strong>
+                                            Đã Sửa: <strong>{{$gateway->fix}}</strong> <br/>   Phần trăm: <strong>{{$gateway->percent}} %</strong>
                                         </td>
                                         <td>
                                             {{ $gateway->status == "1" ? 'Active' : 'Deactive' }}
                                         </td>
                                         <td>
                                             <a href="" class="btn btn-outline btn-circle btn-sm blue" data-toggle="modal" data-target="#viewModal{{$gateway->id}}">
-                                                <i class="fa fa-eye"></i> View </a>
+                                                <i class="fa fa-eye"></i> Xem </a>
                                             <a href="" class="btn btn-outline btn-circle btn-sm purple" data-toggle="modal" data-target="#Modal{{$gateway->id}}">
-                                                <i class="fa fa-edit"></i> Edit </a>
+                                                <i class="fa fa-edit"></i> Chỉnh Sửa </a>
                                         </td>
 
                                     </tr>
@@ -95,7 +95,7 @@
                                                     <div class="row">
                                                         <hr/>
                                                         <div class="col-md-3">
-                                                            <h5>Gateway Name</h5>
+                                                            <h5>Tên cổng</h5>
                                                         </div>
                                                         <div class="col-md-9">
                                                             {{$gateway->name}}
@@ -104,7 +104,7 @@
                                                     <div class="row">
                                                         <hr/>
                                                         <div class="col-md-3">
-                                                            <h5>Conversion Rate</h5>
+                                                            <h5>Tỷ lệ chuyển đổi</h5>
                                                         </div>
                                                         <div class="col-md-9">
                                                             1 {!! $basic->currency  !!} = {{ $gateway->rate }} {{ $gateway->currency }}
@@ -113,16 +113,16 @@
                                                     <div class="row">
                                                         <hr/>
                                                         <div class="col-md-3">
-                                                            <h5>Charge per Transaction</h5>
+                                                            <h5>Tính phí mỗi giao dịch</h5>
                                                         </div>
                                                         <div class="col-md-9">
-                                                            Fixed: <strong>{{$gateway->fix}}</strong> <br/>   Percentage: <strong>{{$gateway->percent}} %</strong>
+                                                            Đã Sửa: <strong>{{$gateway->fix}}</strong> <br/>   Phần Trăm: <strong>{{$gateway->percent}} %</strong>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <hr/>
                                                         <div class="col-md-3">
-                                                            <h5>Payment Details</h5>
+                                                            <h5>Chi tiết thanh toán</h5>
                                                         </div>
                                                         <div class="col-md-9">
                                                             {!!  $gateway->val1 !!}
@@ -131,7 +131,7 @@
                                                     <div class="row">
                                                         <hr/>
                                                         <div class="col-md-3">
-                                                            <h5>Status</h5>
+                                                            <h5>Trạng thái</h5>
                                                         </div>
                                                         <div class="col-md-9">
                                                             {{ $gateway->status == "1" ? 'Active' : 'Deactive' }}
@@ -139,7 +139,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
                                                 </div>
                                             </div>
 
@@ -153,7 +153,7 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h4 class="modal-title">Edit {{$gateway->name}} Information</h4>
+                                                    <h4 class="modal-title">Chỉnh sửa {{$gateway->name}} Thông tin</h4>
                                                 </div>
                                                 <form role="form" method="POST" action="{{url('admin/manual-edit')}}/{{$gateway->id}}" enctype="multipart/form-data">
                                                     {{ csrf_field() }}
@@ -162,18 +162,18 @@
                                                         <div class="form-group">
                                                             <span class="btn green fileinput-button">
                                                                 <i class="fa fa-plus"></i>
-                                                                <span> Upload Logo </span>
+                                                                <span> Tải lên biểu trưng </span>
                                                                 <input type="file" name="gateimg" class="form-control input-lg">
                                                             </span>
                                                         </div>
 
                                                         <div class="form-group">
-                                                            <label for="name">Name of Gateway</label>
+                                                            <label for="name">Tên của Gateway</label>
                                                             <input type="text" value="{{$gateway->name}}" class="form-control" id="name" name="name" >
                                                         </div>
 
                                                         <div class="form-group">
-                                                            <label for="rate">Currency Rate</label>
+                                                            <label for="rate">Tỷ giá tiền tệ</label>
                                                             <div class="input-group mb15">
                                                                 <span class="input-group-addon"><strong>1 {{ $basic->currency }} = </strong></span>
                                                                 <input class="form-control" name="rate" value="{{ $gateway->rate }}" required="" type="text">
@@ -186,34 +186,34 @@
                                                         <div class="form-group">
                                                             <div class="row">
                                                                 <div class="col-md-6">
-                                                                    <label for="fix">Fixed Charge for Transaction</label>
+                                                                    <label for="fix">Phí cố định cho giao dịch</label>
                                                                     <input type="text" value="{{$gateway->fix}}" class="form-control" id="fix" name="fix" >
                                                                 </div>
                                                                 <div class="col-md-6">
-                                                                    <label for="percent">Percentage Charge of Transaction</label>
+                                                                    <label for="percent">Phần trăm phí giao dịch</label>
                                                                     <input type="text" value="{{$gateway->percent}}" class="form-control" id="percent" name="percent" >
                                                                 </div>
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group">
-                                                            <label for="val1">Account Information</label>
+                                                            <label for="val1">thông tin tài khoản</label>
                                                             <input type="text" value="{{$gateway->val1}}" class="form-control" id="val1" name="val1" >
                                                         </div>
 
                                                         <hr/>
                                                         <div class="form-group">
-                                                            <label for="status">Status</label>
+                                                            <label for="status">Trạng thái</label>
                                                             <select class="form-control" name="status">
-                                                                <option value="1" {{ $gateway->status == "1" ? 'selected' : '' }}>Active</option>
-                                                                <option value="0" {{ $gateway->status == "0" ? 'selected' : '' }}>Deactive</option>
+                                                                <option value="1" {{ $gateway->status == "1" ? 'selected' : '' }}>Kích hoạt</option>
+                                                                <option value="0" {{ $gateway->status == "0" ? 'selected' : '' }}>Hủy kích hoạt</option>
                                                             </select>
 
                                                         </div>
                                                     </div>
 
                                                     <div class="modal-footer">
-                                                        <button type="submit" class="btn btn-success">Update</button>
+                                                        <button type="submit" class="btn btn-success">Cập nhật</button>
                                                     </div>
 
                                                 </form>

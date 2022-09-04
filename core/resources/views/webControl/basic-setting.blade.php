@@ -29,7 +29,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Website Title</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Tiêu Đề Trang</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input class="form-control bold input-lg" name="title" value="{{ $basic->title }}" type="text" required>
@@ -41,7 +41,7 @@
 
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Website Color </strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Màu trang web </strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input type="text" name="color" style="background: #{{ $basic->color }}" class="form-control bold input-lg" value="{{ $basic->color }}" required>
@@ -52,7 +52,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Website Started Date </strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Ngày bắt đầu trang web </strong></label>
                                     <div class="col-md-12">
                                         <div class='input-group date' id='datetimepicker1'>
                                             <input type="text" name="start_date" class="form-control bold input-lg" value="{{ $basic->start_date }}">
@@ -66,7 +66,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">BASE CURRENCY</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;"> TIỀN TỆ CƠ BẢN</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input class="form-control bold input-lg" name="currency" value="{{ $basic->currency }}" type="text" required>
@@ -77,7 +77,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">currency SYMBOL</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Ký Hiệu Tiền Tệ</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input class="form-control bold input-lg" name="symbol" value="{{ $basic->symbol }}" type="text" required>
@@ -88,7 +88,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">DECIMAL AFTER POINT</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">QUYẾT ĐỊNH SAU KHI ĐIỂM</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input class="form-control bold input-lg" name="deci" value="{{ $basic->deci }}" type="text" required>
@@ -102,7 +102,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">User Registration</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Đăng ký người dùng</strong></label>
                                     <div class="col-md-12">
                                         <input data-toggle="toggle" {{ $basic->user_reg == '1' ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-width="100%" data-size="large" type="checkbox" name="user_reg">
                                     </div>
@@ -110,7 +110,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Email Verification</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Email xác thực</strong></label>
                                     <div class="col-md-12">
                                         <input data-toggle="toggle" {{ $basic->email_verify == '1' ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-width="100%" data-size="large" type="checkbox" name="email_verify">
                                     </div>
@@ -118,7 +118,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Phone Verification</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Xác minh điện thoại</strong></label>
                                     <div class="col-md-12">
                                         <input data-toggle="toggle" {{ $basic->phone_verify == '1' ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-width="100%" data-size="large" type="checkbox" name="phone_verify">
                                     </div>
@@ -129,7 +129,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Withdraw Status</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Trạng thái rút tiền</strong></label>
                                     <div class="col-md-12">
                                         <input data-toggle="toggle" {{ $basic->withdraw_status == '1' ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-width="100%" data-size="large" type="checkbox" name="withdraw_status">
                                     </div>
@@ -137,7 +137,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Email Notification</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">thông báo có email</strong></label>
                                     <div class="col-md-12">
                                         <input data-toggle="toggle" {{ $basic->email_notify == '1' ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-width="100%" data-size="large" type="checkbox" name="email_notify">
                                     </div>
@@ -145,7 +145,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Phone Notification</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Thông báo qua điện thoại</strong></label>
                                     <div class="col-md-12">
                                         <input data-toggle="toggle" {{ $basic->phone_notify == '1' ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-width="100%" data-size="large" type="checkbox" name="phone_notify">
                                     </div>
@@ -156,7 +156,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Facebook Login</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Đăng nhập Facebook</strong></label>
                                     <div class="col-md-12">
                                         <input data-toggle="toggle" {{ $basic->fb_login == '1' ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-width="100%" data-size="large" type="checkbox" name="fb_login">
                                     </div>
@@ -164,7 +164,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">App ID (Facebook Login)</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">ID ứng dụng (Đăng nhập Facebook)</strong></label>
                                     <div class="col-md-12">
                                         <input class="form-control bold input-lg" name="facebook_app" value="{{ $facebook->client_id }}" type="text" required>
                                     </div>
@@ -172,7 +172,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">App SECRET (Facebook Login)</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">BÍ MẬT Ứng dụng (Đăng nhập Facebook)</strong></label>
                                     <div class="col-md-12">
                                         <input class="form-control bold input-lg" name="facebook_secret" value="{{ $facebook->client_secret }}" type="text" required>
                                     </div>
@@ -183,7 +183,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Google Login</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Đăng nhập Google</strong></label>
                                     <div class="col-md-12">
                                         <input data-toggle="toggle" {{ $basic->g_login == '1' ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-width="100%" data-size="large" type="checkbox" name="g_login">
                                     </div>
@@ -191,7 +191,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Client ID (Google Plus Login)</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">ID khách hàng (Đăng nhập Google Plus)</strong></label>
                                     <div class="col-md-12">
                                         <input class="form-control bold input-lg" name="google_app" value="{{ $google->client_id }}" type="text" required>
                                     </div>
@@ -199,7 +199,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Client SECRET (Google Plus Login)</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">BÍ MẬT ứng dụng khách (Đăng nhập Google Plus)</strong></label>
                                     <div class="col-md-12">
                                         <input class="form-control bold input-lg" name="google_secret" value="{{ $google->client_secret }}" type="text" required>
                                     </div>
@@ -210,7 +210,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Charge Per Coin Withdraw</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Tính phí mỗi lần rút tiền xu</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input class="form-control bold input-lg" name="withdraw_charge" value="{{ $basic->withdraw_charge }}" type="text" required>
@@ -224,7 +224,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Google reCaptcha Verification</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Xác minh reCaptcha của Google</strong></label>
                                     <div class="col-md-12">
                                         <input data-toggle="toggle" {{ $basic->google_recap == '1' ? 'checked' : '' }} data-onstyle="success" data-offstyle="danger" data-width="100%" data-size="large" type="checkbox" name="google_recap">
                                     </div>
@@ -232,7 +232,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Google reCaptcha Site Key</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Khóa trang web reCaptcha của Google</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input class="form-control bold input-lg" name="google_site_key" value="{{ $basic->google_site_key }}" type="text" required>
@@ -243,7 +243,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Google reCaptcha Secret Key</strong></label>
+                                    <label class="col-md-12"><strong style="text-transform: uppercase;">Khóa bí mật reCaptcha của Google</strong></label>
                                     <div class="col-md-12">
                                         <div class="input-group">
                                             <input class="form-control bold input-lg" name="google_secret_key" value="{{ $basic->google_secret_key }}" type="text" required>
@@ -256,7 +256,7 @@
                         <br> <br>
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3">
-                                <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-send"></i> UPDATE</button>
+                                <button type="submit" class="btn blue btn-block btn-lg"><i class="fa fa-send"></i> Cập Nhật</button>
                             </div>
                         </div>
                         <br>

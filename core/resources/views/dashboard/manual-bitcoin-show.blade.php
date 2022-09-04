@@ -28,10 +28,10 @@
                             </div>
                             <ul style='font-size: 15px;' class="list-group text-center bold">
                                 <li class="list-group-item">{!! $btc->val1  !!}  </li>
-                                <li class="list-group-item">Currency - {!! $btc->currency  !!}  </li>
+                                <li class="list-group-item">Tiền tệ - {!! $btc->currency  !!}  </li>
                                 <li class="list-group-item">1 {!! $basic->currency  !!} = {{ $btc->rate }} {{ $btc->currency }} </li>
-                                <li class="list-group-item"> Fix Charge - {{ $btc->fix }} {{ $basic->currency }}</li>
-                                <li class="list-group-item"> Percentage - {{ $btc->percent }}<i class="fa fa-percent"></i></li>
+                                <li class="list-group-item"> Khắc phục phí- {{ $btc->fix }} {{ $basic->currency }}</li>
+                                <li class="list-group-item"> Phần trăm - {{ $btc->percent }}<i class="fa fa-percent"></i></li>
                                 <li class="list-group-item"><span class="aaaa">{{ $btc->status == 1 ? "Active" : 'DeActive' }}</span></li>
                             </ul>
                             <div class="panel-footer" style="overflow: hidden">

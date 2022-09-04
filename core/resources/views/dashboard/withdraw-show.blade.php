@@ -29,11 +29,11 @@
                                     <img class="" style="width: 35%;border-radius: 5px" src="{{ asset('assets/images') }}/{{ $p->image }}" alt="">
                                 </div>
                                 <ul style='font-size: 15px;' class="list-group text-center bold">
-                                    <li class="list-group-item">Minimum - {!! $p->withdraw_min !!} {{ $basic->currency }} </li>
-                                    <li class="list-group-item">Maximum - {!! $p->withdraw_max !!} {{ $basic->currency }} </li>
-                                    <li class="list-group-item"> Fix Charge - {{ $p->fix }} {{ $basic->currency }}</li>
-                                    <li class="list-group-item"> Percentage - {{ $p->percent }}<i class="fa fa-percent"></i></li>
-                                    <li class="list-group-item">Processing Time - {!! $p->duration !!} Days </li>
+                                    <li class="list-group-item">Tối thiểu - {!! $p->withdraw_min !!} {{ $basic->currency }} </li>
+                                    <li class="list-group-item">Tối Đa - {!! $p->withdraw_max !!} {{ $basic->currency }} </li>
+                                    <li class="list-group-item"> Khắc phục phí - {{ $p->fix }} {{ $basic->currency }}</li>
+                                    <li class="list-group-item"> Phần trăm - {{ $p->percent }}<i class="fa fa-percent"></i></li>
+                                    <li class="list-group-item">Thời gian xử lý - {!! $p->duration !!} Days </li>
                                     <li class="list-group-item"><span class="aaaa">{{ $p->status == 1 ? "Active" : 'DeActive' }}</span></li>
                                 </ul>
                                 <div class="panel-footer" style="overflow: hidden">
